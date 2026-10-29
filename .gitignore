@@ -1,0 +1,10 @@
+# macOS
+.DS_Store
+._*
+
+# Office lock and temp files (created while a .docx/.pptx is open)
+~$*
+~*.tmp
+
+# Claude Code per-user settings (shared settings.json stays tracked)
+.claude/settings.local.json
