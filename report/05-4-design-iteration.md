@@ -33,7 +33,7 @@ The version history agrees with this.
 | 1 Oct | — | User Researcher | Dual-track user journey map (PDF) |
 | 11 Oct | — | Visual & UI Designer | Hand-drawn wireframe sketch (photo), redrawn as a digital wireframe |
 | 12 Oct | — | All | Mid-project checkpoint: sketch → wireframe → first hi-fi screens for all five features |
-| 28 Oct 14:17–14:39 | "Oct 28, 2:39 PM" (earliest in this file) | Visual & UI Designer (Li-En Lo); file set up with the Lead | **v1, Li-En Lo's initial hi-fi design:** one page, six sections, 13 screens at 390 × 844 shown in rounded device mock-ups: F1, F1A, F2, F3, F3A, F3B (a single "English UI" demo screen), F4, F4A, F5, M1, S1, S2, S3 |
+| 28 Oct 14:17–14:39 | "Oct 28, 2:39 PM" (earliest in this file) | Visual & UI Designer (Li-En Lo); file set up with the Lead | **v1, Li-En Lo's initial hi-fi design:** one page, six sections, 13 screens at 390 × 844 shown in rounded device mock-ups: F1, F1A, F2, F3, F3A, F3B (a single "English UI" demo screen; the same frame later became en-GB F3A), F4, F4A, F5, M1, S1, S2, S3 |
 | 28 Oct 14:50–15:18 | "Oct 28, 3:18 PM" | Lead (Haochen Fa) | **v1 improved and expanded to the full flow:** 28 screens, each in a zh-HK and an en-GB row (F3B dropped). New: onboarding O1, O2, location-off S4; Saved F1B and its empty state F1C; loading S5, offline S6, black-rainstorm disruption S7; route tools F2A save-with-Undo, F2B timetable, F2C service notices, M2 and F2D alight alert; F3C corrected destination with Undo; F4B landmarks, F4C map. First components: Tab Bar, Language Switch, Status Bar, Logo placeholder |
 | 28 Oct 15:28–15:53 | "Oct 28, 3:53 PM" | Lead (Haochen Fa) | **Prototype and comparison boards:** first prototype links (about 550), with flows "First launch" and "Home" in each language. New page "Original vs Redesign" with 8 sections. The 18 zh-HK screens it shows were turned into components |
 | 28 Oct (same day) | — | Lead (Haochen Fa), refining Li-En Lo's initial design | Visual clean-up (project notes): no eyebrow labels, no pink tints, no black hero or tip cards, no "tap to view" filler; red kept for header, route badges, primary buttons and the active tab; ETA numbers in ink |
@@ -51,10 +51,15 @@ The version history agrees with this.
 
 ## How to use this in the report
 
-- **Figure (done):** [figures/iteration/F1-home-iteration-strip.png](figures/iteration/F1-home-iteration-strip.png), Home F1 (zh-HK) at 28 Oct 14:39, 30 Oct 00:15 and 5 Nov 17:56, captured from the version history. The single captures are in the same folder. What the strip shows:
-  - v1 still has eyebrow labels (快捷到達, 步行可達), pink-tinted arrival rows, red ETA numbers and a floating 繁體中文 pill.
-  - v2 removes all four (the visual clean-up), adds the status bar and the official icon, and moves the language control to the header button.
-  - The final adds the two-line status block. Its search bar is thinner (24 pt), which is listed as a limitation.
+- **Figure (done):** [figures/iteration/F3A-route-search-iteration-strip.png](figures/iteration/F3A-route-search-iteration-strip.png). It shows English route search results at 28 Oct 14:39, 30 Oct 00:15 and 5 Nov 17:56, captured from the version history. The single captures are in the same folder.
+  - **Why this screen:** report figures use the en-GB page. v1 had only one English screen, *F3B · Route Search / English UI*. It is the same Figma frame (node `1:1126`) that became the en-GB *F3A · Route Search / Recommended options*, so all three panels show one frame over time.
+  - **v1 (Li-En Lo):** a 390 × 844 device mock-up with no status bar. It still has a red ETA ("27 min"), pink-tinted summary tiles labelled in Chinese (預計車程, 全程車費, 途經), Chinese stop names in the English UI, and a floating "English" pill.
+  - **v2 (Haochen Fa), after the visual clean-up:**
+    - 402 × 874 with the iOS status bar; ETA in ink ("28 min", "Total trip · arrive 11:00").
+    - The pink tiles are gone. The trip reads as legs ("Walk 2 min › 87D 6 stops"), with "Next bus in 10 min" and a Live badge.
+    - A walk-then-bus itinerary, English stop names, and no floating pill.
+  - **Final (Moling Kong's 5 Nov accessibility pass):** on this screen the visible change is small: the Live badge on the arrival row is larger. The pass's bigger changes are on Home and route detail (see the 5 Nov row above).
+  - The earlier zh-HK Home strip (`F1-home-*` in the same folder) is superseded. It is kept only as a record and is not used in the report.
   - For a sharper print version, export the same frames at 2× from version history (open the version, select the frame, Export PNG).
 - **Optional second figure:** route detail F2 arrival row, 3 Nov 21:34 vs 5 Nov 17:56 (badge moved beside the minutes). This is the only before/after pair that sits next to an evaluation step.
 - **Growth line for the text:** 13 screens (28 Oct) → 56 bilingual screens (28 Oct) → 62 on two pages (29 Oct) → 142 frames driven by variables on zh-HK (2 Nov).
@@ -74,5 +79,5 @@ The version history agrees with this.
 
 - What the 17:06–17:55 session on 2 Nov changed. The counts and structure are unchanged; property-level detail was not compared for that stretch.
 - Whether any change was made after a pilot or informal feedback before the Maze test. Ask the team. If one was, it counts as iteration evidence.
-- The exact session of the visual clean-up. The Home strip shows it happened between 28 Oct 14:39 and 30 Oct 00:15, and the project notes date it to 28 Oct. The 16:03–16:10 session made no structural change, which fits a styling pass.
+- The exact session of the visual clean-up. The version history shows it happened between 28 Oct 14:39 and 30 Oct 00:15 (compare v1 and v2 in the strip), and the project notes date it to 28 Oct. The 16:03–16:10 session made no structural change, which fits a styling pass.
 - The file's history starts on 28 Oct. The checkpoint report (12 Oct) mentions 14 screens in Figma, but the earliest version here has 13. The single-language F3B demo screen may be the difference, or the earlier work may be in another file. Check before writing "14".

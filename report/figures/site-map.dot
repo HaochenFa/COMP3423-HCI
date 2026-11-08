@@ -1,92 +1,100 @@
-// Figure 3.2 Site map of the App1933 redesign (zh-HK prototype).
-// Built from the prototype links on the zh-HK page of the Figma file (read 8 Nov 2026).
+// Figure 3.2 Site map of the App1933 redesign (English prototype).
+// Built from the prototype links on the en-GB page of the Figma file (read 8 Nov 2026).
+// Solid arrows are links in the prototype; dotted boxes are screens drawn but not linked from another screen.
 // Render: dot -Tsvg site-map.dot -o site-map.svg ; dot -Tpng -Gdpi=200 site-map.dot -o site-map.png
 digraph sitemap {
-  graph [rankdir=TB, fontname="Heiti TC", fontsize=13, nodesep=0.25, ranksep=0.45, pad=0.3, bgcolor="white", newrank=true, compound=true];
-  node  [shape=box, style="rounded,filled", fillcolor="#F5F5F5", color="#D0D0D0", fontname="Heiti TC", fontsize=11, fontcolor="#1A1A1A", margin="0.12,0.06"];
-  edge  [color="#8A8A8A", arrowsize=0.6, fontname="Heiti TC", fontsize=9, fontcolor="#555555"];
+  graph [rankdir=TB, fontname="Helvetica", fontsize=13, nodesep=0.25, ranksep=0.45, pad=0.3, bgcolor="white", newrank=true, compound=true];
+  node  [shape=box, style="rounded,filled", fillcolor="#F5F5F5", color="#D0D0D0", fontname="Helvetica", fontsize=11, fontcolor="#1A1A1A", margin="0.12,0.06"];
+  edge  [color="#8A8A8A", arrowsize=0.6, fontname="Helvetica", fontsize=9, fontcolor="#555555"];
 
   // First launch
   subgraph cluster_launch {
-    label="首次使用 First launch"; style="rounded,dashed"; color="#B0B0B0"; fontcolor="#555555";
-    O1 [label="O1 歡迎 Welcome\n選語言 choose language"];
-    O2 [label="O2 定位權限\nLocation permission"];
-    S4 [label="S4 定位關閉\nLocation off:\n以地點名稱搜尋 search by place"];
-    O1 -> O2;
-    O2 -> S4 [label="暫時不用\nNot now"];
+    label="First launch"; style="rounded,dashed"; color="#B0B0B0"; fontcolor="#555555";
+    O1 [label="O1 Welcome\nthree promises, choose language"];
+    O2 [label="O2 Location permission"];
+    S4 [label="S4 Location off\nsearch by place name,\npopular places"];
+    O1 -> O2 [label="Get started"];
+    O2 -> S4 [label="Not now"];
   }
 
-  TAB [label="底部導航 Tab bar (on every core screen)\n主頁 Home   行程 Trip   附近 Nearby   收藏 Saved   更多 More", shape=box, style="filled", fillcolor="#C8102E", color="#C8102E", fontcolor="white", fontsize=12];
-  O2 -> TAB [label="允許 Allow"];
-  S4 -> TAB [style=dashed];
+  TAB [shape=plaintext, style="", margin=0, label=<
+    <table border="0" cellborder="0" cellspacing="0" cellpadding="6" bgcolor="#C8102E">
+      <tr><td colspan="5"><font color="white" point-size="12">Tab bar (on every core screen)</font></td></tr>
+      <tr><td port="home"><font color="white">Home</font></td><td port="trip"><font color="white">Trip</font></td><td port="nearby"><font color="white">Nearby</font></td><td port="saved"><font color="white">Saved</font></td><td port="more"><font color="white">More</font></td></tr>
+    </table>>];
+  O2 -> TAB [label="Allow while\nusing the app"];
+  S4 -> TAB [style=dashed, label="Turn on location"];
 
   subgraph cluster_home {
-    label="主頁 Home"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
-    F1  [label="F1 主頁\n收藏路線排先，實時 / 預定\nsaved routes first, Live / Scheduled"];
-    F1A [label="F1A 展開路線卡\nexpanded card (in place)"];
-    SH  [label="S5 載入 Loading\nS6 離線 Offline (cached)\nS7 黑雨 Service disruption"];
-    F1 -> F1A;
+    label="Home"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
+    F1  [label="F1 Home\nsaved routes first, Live / Scheduled\nsearch bar opens Trip, Map view opens the map\n(also drawn at the largest text size)"];
+    F1A [label="F1A Card expanded in place\nfull route time, fare, stops"];
+    SH  [label="S5 Loading\nS6 Offline (cached times, Retry)\nS7 Black Rainstorm warning\n(See affected routes → notices)"];
+    F1 -> F1A [label="tap route 8"];
     F1 -> SH [style=dotted, arrowhead=none];
   }
 
   subgraph cluster_trip {
-    label="行程 Trip"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
-    F3  [label="F3 行程規劃 Trip planner\n起點 = 目前位置\norigin = current location"];
-    F3A [label="F3A 推薦方案\nRecommended options"];
-    F3C [label="F3C 已更正 + 改回原本輸入\ntypo corrected, undo"];
-    S1  [label="S1 找不到結果\nNo results"];
-    F3 -> F3A; F3 -> F3C; F3 -> S1;
+    label="Trip"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
+    F3  [label="F3 Trip planner\norigin = my location,\nplace suggestions"];
+    F3A [label="F3A Three travel options\nRecommended first"];
+    F3C [label="F3C Typo corrected\nUse my spelling / Correct", style="rounded,dashed,filled"];
+    S1  [label="S1 No routes found\nSearch again", style="rounded,dashed,filled"];
+    F3 -> F3A [label="pick a place"];
+    F3C -> S1 [style=dotted];
   }
 
   subgraph cluster_nearby {
-    label="附近 Nearby"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
-    F4  [label="F4 附近站點\nstops: street, walk, next bus"];
-    F4A [label="F4A 展開路線\nroute expanded"];
-    F4B [label="F4B 地標 Landmarks\ncategory, nearest stop, buses"];
-    F4C [label="F4C 地圖 Map view"];
-    F4 -> F4A; F4 -> F4B; F4 -> F4C; F4C -> F4A;
+    label="Nearby"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
+    F4  [label="F4 Nearby stops\nwalking time, street, next buses"];
+    F4A [label="F4A Route expanded\nin the list"];
+    F4B [label="F4B Landmarks\ncategory, nearest stop, buses"];
+    F4C [label="F4C Map\nnumbered pins = list numbers"];
+    F4 -> F4A; F4 -> F4B [label="Landmarks"]; F4 -> F4C [label="Map"]; F4C -> F4A [label="View stop"];
   }
 
   subgraph cluster_saved {
-    label="收藏 Saved"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
-    F1B [label="F1B 收藏\nroutes and stops"];
-    F1C [label="F1C 未有收藏\nEmpty state"];
-    MG  [label="收藏管理 Manage\nsort, clear, restore"];
-    F1B -> MG; F1B -> F1C [style=dotted, arrowhead=none];
+    label="Saved"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
+    F1B [label="F1B Saved\nmy routes, my stops"];
+    F1C [label="F1C Nothing saved yet\nhow to save, with an example", style="rounded,dashed,filled"];
+    F1B -> F1C [style=dotted, arrowhead=none];
   }
 
   subgraph cluster_more {
-    label="更多 More"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
-    F5  [label="F5 更多：分組設定\ngrouped settings"];
-    TS  [label="文字大小 Text size\n100%, 150%, 200%"];
-    HC  [label="高對比 High contrast"];
-    CM  [label="靜心模式 Calm mode"];
-    M1  [label="M1 語言 Language\n繁體中文、简体中文、English"];
-    F5 -> TS; F5 -> HC; F5 -> CM; F5 -> M1;
+    label="More"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
+    F5  [label="F5 More: grouped settings\nText · Visual aids · Other"];
+    TS  [label="S2A 150% → S2B 200%\nText size, A− / A+"];
+    HC  [label="S2C High contrast\nS2 High contrast at 200%"];
+    CM  [label="S3 Calm mode"];
+    M1  [label="M1 Language sheet\n繁體中文 · 简体中文 · English"];
+    F5 -> TS [label="A+"]; F5 -> HC; F5 -> CM; F5 -> M1;
   }
 
-  TAB -> F1  [lhead=cluster_home];
-  TAB -> F3  [lhead=cluster_trip];
-  TAB -> F4  [lhead=cluster_nearby];
-  TAB -> F1B [lhead=cluster_saved];
-  TAB -> F5  [lhead=cluster_more];
+  TAB:home:s   -> F1  [lhead=cluster_home];
+  TAB:trip:s   -> F3  [lhead=cluster_trip];
+  TAB:nearby:s -> F4  [lhead=cluster_nearby];
+  TAB:saved:s  -> F1B [lhead=cluster_saved];
+  TAB:more:s   -> F5  [lhead=cluster_more];
+
+  // Keep the tabs in app order: Home, Trip, Nearby, Saved, More
+  // Typo and error states sit under the results, not above the planner
+  F3A -> F3C [style=invis];
+  // Layout only (no such link in the prototype): pulls Trip next to Home so the tabs read in app order
+  F3A -> F2 [style=invis];
 
   // Shortcuts across tabs
-  F1 -> F4C [style=dashed, color="#C8102E", fontcolor="#C8102E", label="地圖檢視\nMap view", constraint=false];
 
   // Shared destination: route detail
   subgraph cluster_route {
-    label="路線詳情 Route detail: the same screen from any route badge"; style="rounded,filled"; fillcolor="#FFFFFF"; color="#1A1A1A"; fontcolor="#1A1A1A"; fontsize=13;
-    F2  [label="F2 路線詳情\n每個車站都有 ☆ 及「收藏此站」\n☆ on every stop, labelled Save", fillcolor="#FFFFFF", color="#1A1A1A"];
-    F2A [label="F2A 已收藏 + 復原\nsaved, with Undo"];
-    F2B [label="F2B 時間表\nTimetable"];
-    F2C [label="F2C 特別通告\nService notices"];
-    M2  [label="M2 下車提示設定\nAlight alert set-up"];
-    F2D [label="F2D 提示進行中\nAlert in progress"];
-    FR  [label="完整路線 Full stop lists\n7 routes, both directions"];
-    F2 -> F2A; F2 -> F2B; F2 -> F2C; F2 -> M2; M2 -> F2D;
-    F2 -> FR [style=dotted, arrowhead=none];
+    label="Route detail: the same screen from Home, Saved, Nearby and Landmarks"; style="rounded,filled"; fillcolor="#FFFFFF"; color="#1A1A1A"; fontcolor="#1A1A1A"; fontsize=13;
+    F2  [label="F2 Route detail\n☆ on every stop, labelled Save this stop", fillcolor="#FFFFFF", color="#1A1A1A"];
+    F2A [label="F2A Stop saved\ntoast with Undo"];
+    F2B [label="F2B Timetable"];
+    F2C [label="F2C Service notices"];
+    M2  [label="M2 Alight alert set-up"];
+    F2D [label="F2D Alert in progress"];
+    F2 -> F2A [label="☆ / Save"]; F2 -> F2B; F2 -> F2C; F2 -> M2; M2 -> F2D [label="Start alert"];
   }
 
-  { F1A F1B F3A F4A F4B } -> F2 [color="#1A1A1A", style=dashed, lhead=cluster_route];
+  { F1A F1B F4 F4B } -> F2 [color="#1A1A1A", style=dashed, lhead=cluster_route];
 }

@@ -7,7 +7,13 @@ Ground rules (agreed 8 Nov):
 - **Evidence is the Maze PDF and `user_feedback.docx` only.** `user-test-summary.docx` is a secondary write-up; its recommendations and interpretations are not participants' views and are not cited.
 - **Report every result, but judge each one.** Where the data shows a real weakness we say so; where a complaint conflicts with established practice or comes from the test set-up, we explain why we keep the design.
 
-Drafts so far: [report/03-overall-design.md](report/03-overall-design.md) and [report/04-feature-details.md](report/04-feature-details.md), both written from the current Figma file.
+Drafts so far: [report/03-overall-design.md](report/03-overall-design.md) and [report/04-feature-details.md](report/04-feature-details.md), both written from the en-GB page of the Figma file.
+
+**Use the English (en-GB) screens everywhere (decided 8 Nov).** This covers every report figure, the slides and the video demo.
+- The en-GB page is the version tested in Maze, and it renders cleanly.
+- The Traditional Chinese page has layout faults in its final save: the Home search bar is squashed to 24 pt, and the 繁 language button is blank on S5–S7.
+- The "Original vs Redesign 原版對比" boards hold instances of the Chinese screens, so do not export them. Compose before/after figures from the annotated originals and en-GB exports.
+- The report mentions the Chinese page only as part of the build history (§3.1, §5.4).
 
 ## 1. Test results (all figures checked against the Maze PDF)
 
@@ -70,8 +76,8 @@ Page budget: cover 1 + 18.5 body, leaving about half a page spare.
 | — | Cover | 1 | Lead | Title, names + SIDs, workload table with leader marked; each "key tasks" cell points to sections/figures | Workload table | Each role visibly traceable. **Xulu Zhang's SID is missing in the checkpoint** |
 | 1 | Introduction | 1 | Lead | App1933 context; two target groups; problem statement; why App1933; scope = F1–F5 and why feasible in 8 weeks | Small F1–F5 table | Problem + users (2), app choice (2), 5 features (2), realistic scope (2) |
 | 2 | Related Work | 3 | All, edited by Lead | Synthesised by theme: (a) heuristics and cognition, (b) motor and touch, (c) older adults and accessibility, (d) real-time transit information, (e) intrusive ads and dark patterns. End each theme with "→ so we did X in F_n" | Optional principle → feature matrix | 10–20 refs all cited (3), balanced mix (3), synthesis (3), traceable to decisions (3) |
-| 3 | Overall Design | 4 | Interaction + Visual + Researcher | **Drafted:** [report/03-overall-design.md](report/03-overall-design.md) | Journey map (exists), site map (to draw), walkthrough strips, rationale table, style guide, 100%/200% comparison | Overview (3), journey with pain points (4), walkthrough (4), named principles (4), coherence (3) |
-| 4 | Feature Details | 5 | Each feature's designer + Accessibility lead for annotations | **Drafted:** [report/04-feature-details.md](report/04-feature-details.md) | 5 annotated "before" figures (callouts listed in the draft); 5 before/after figures from the Original vs Redesign page | Clickable via public link (4), annotated evidence (4), principles named (3), before/after for every feature (4), states and edge cases (5) |
+| 3 | Overall Design | 4 | Interaction + Visual + Researcher | **Drafted:** [report/03-overall-design.md](report/03-overall-design.md) | Journey map (exists), site map (done), walkthrough strips, rationale table, style guide, 100%/200% comparison | Overview (3), journey with pain points (4), walkthrough (4), named principles (4), coherence (3) |
+| 4 | Feature Details | 5 | Each feature's designer + Accessibility lead for annotations | **Drafted:** [report/04-feature-details.md](report/04-feature-details.md) | 5 annotated "before" figures (callouts listed in the draft); 5 before/after figures composed from the annotated originals and en-GB exports (not the Original vs Redesign boards, which show the Chinese screens) | Clickable via public link (4), annotated evidence (4), principles named (3), before/after for every feature (4), states and edge cases (5) |
 | 5 | Testing, Results, Discussion | 4 | User Researcher | 5.1 method: participants, recruitment, Maze set-up (21 blocks), task ↔ feature table, metrics, procedure, note on en-GB prototype fidelity. 5.2 results: the §1 table, charts, verbatim quotes. 5.3 discussion: §2. 5.4 iteration: see note below | Task table; stacked bar of direct/indirect/failed; comprehension bar chart; Maze p.14 funnel; satisfaction chart | Real test + raw data in appendix (5), method (4), data + quotes (4), discussion linked to decisions (4), iteration (3) |
 | 6 | Conclusion & Future Work | 1 | Lead | Summary consistent with §5; one future direction; limitations | — | Consistent summary (3), one justified direction (3), honest limitations (2) |
 | — | References | — | Lead | 12–16 refs, APA 7 | — | Markers spot-check 2–3 |
@@ -93,10 +99,14 @@ Present the §2 accepted points as proposed changes in Future Work. Markers may 
 The accessibility pass (a 200% check, then arrival-row changes) is the closest thing to iteration after findings, from our own expert review rather than user testing.
 
 **Limitations to state (6).** n = 9; tested in English only, while one target group is older Cantonese speakers; no participant was aged 60+ (ages 18–48, seven of nine aged 18–20), although the checkpoint planned at least one, so the elderly group is not represented; five of nine used a laptop, so most taps were mouse clicks and touch-target size and thumb reach were not really tested. The three phone users found the expected path far less often than the laptop users (10/24 against 35/40 in blocks 3–18), so the expected-path rates may be optimistic for the phone the app is designed for; participants were classmates, friends and relatives, who may rate a friend's design kindly (note it beside the ease ratings); tasks were done remotely and unmoderated, so no one watched participants work and hesitation shows only in the click data. Follow-up conversations, where some participants asked about the design and its logic, added informal feedback, but not everyone took part and they followed no fixed questions; the en-GB test page had fewer working interactions than the full design, which inflates misclicks and caused one failure; Maze's task panel blocked a target once; one comprehension question was ambiguously worded; no screen-reader testing of the prototype, and the original app's screen-reader check was an inspection, not a VoiceOver session; no re-test. Design issues found in our own audit of the frozen file (decided 8 Nov to report as limitations, not fix):
-- at 200% text, two secondary descriptions on the More screen (S2, S2B) wrap into the row below;
-- on S5, S6 and S7 (zh-HK) the 繁 language label is white on a white pill;
-- the "目前位置" label on F4B is `#BBBBBB` on white (1.92:1, below WCAG 1.4.3);
-- the Home search bar (F1) is 24 pt tall in the final file: it meets WCAG 2.5.8's 24 pt minimum but not the 44 pt the rest of the design follows. It was taller on 30 Oct and had shrunk by 3 Nov (visible in the Home iteration strip);
+- **the text-size steps are not literal percentages.** The control is labelled 100% / 150% / 200%. At "200%", Home's headings double (20 → 40 pt), but route names grow only from 15 to 22 pt and small labels from 12 to 18 pt. On the More screen, text grows from 16 to 18 to 20 pt. Both drafts now state the real sizes; never write "the whole app scales to 200%";
+- in the English prototype, text size, high contrast and calm mode are drawn on More (and text size on one Home screen), not applied to every screen;
+- the "Current location" label on the three Nearby screens (F4, F4A, F4B) is `#BBBBBB` on white (1.92:1, below WCAG 1.4.3);
+- two screens are drawn but not linked from any other screen in the English prototype: the typo correction (F3C) and empty Saved (F1C);
+- **Chinese page only, which is why we present the English page:**
+  - the Home search bar is 24 pt tall in the final save (English: 52 pt). It was taller on 30 Oct and had shrunk by 3 Nov;
+  - on S5, S6 and S7 the 繁 language label is white on a white pill;
+  - at 200% text, two secondary descriptions on More (S2, S2B) wrap into the row below;
 - no screen in the prototype scrolls. Every frame is fixed at 874 pt, yet on 12 of the 31 tested en-GB screens (15 of 31 on zh-HK) content runs past the bottom and cannot be reached in Present mode. Examples are F3A's second route option, the lower stops on the Nearby list and the advert slot at the foot of Home. Found 8 Nov while checking the Maze tap positions;
 - the 111 frames added on 2 Nov so every tap responds (sections 互動補全, 07, 08) are wireframe-level: plain outlined buttons and list rows, no cards or ETA styling, dialogs without the app header, and some prototype-control copy such as 測試：找不到的地點 and 模擬前進一站. The core 31 screens carry the visual design.
 
@@ -110,11 +120,11 @@ Screenshot-driven, one idea per slide, about 15 slides. Each member presents the
 |---|---|---|---|
 | 0:00–1:30 | 1–3 | Title + team/roles; App1933 and the two target users; 3 real pain-point screenshots (launch advert, route-number-only search, hidden save menu) | Lead |
 | 1:30–2:30 | 4 | Dual-track journey map, highlighting the −3 dips at launch and search, arrows to F1–F5 | User Researcher |
-| 2:30–6:30 | 5–10 | IA and visual language (1 slide); F1–F5 before/after (1 slide each, principle named on the slide); **live Figma Present-mode walkthrough** of the zh-HK prototype: first launch → Home → save with Undo → plan a trip with typo correction → nearby landmarks → text size 200% and high contrast (≈2 min of the 4) | Interaction Designer + Visual Designer + Accessibility Lead (F5) |
+| 2:30–6:30 | 5–10 | IA and visual language (1 slide); F1–F5 before/after (1 slide each, principle named on the slide); **live Figma Present-mode walkthrough** of the en-GB prototype (flow "First launch (en-GB)"): first launch → Home → save with Undo → plan a trip → nearby landmarks → text size 200% and back to Home (≈2 min of the 4). The typo-correction screen is not linked, so show it as a still | Interaction Designer + Visual Designer + Accessibility Lead (F5) |
 | 6:30–9:00 | 11–14 | Method (n = 9, tasks ↔ features); results chart + satisfaction; what worked; what we accept (stop-saving entry) and what we defend (text size in settings, map as an alternative path), one verbatim quote each | User Researcher |
 | 9:00–10:00 | 15 | Summary, one future direction, limitations | Lead |
 
-Production notes: demo the zh-HK prototype (more complete than the tested en-GB page) in Present mode with the iPhone 18 Pro device frame; record segments separately and cut together; aim for 9:30. PPT design by the Visual & UI Designer using the app's visual language (Noto Sans HK, #C8102E, white).
+Production notes: demo the en-GB prototype (the tested version; the zh-HK page has layout faults) in Present mode with the iPhone 18 Pro device frame. In Present mode the language sheet opens but does not switch language, and screens do not scroll, so plan the clicks around that; record segments separately and cut together; aim for 9:30. PPT design by the Visual & UI Designer using the app's visual language (Noto Sans HK, #C8102E, white).
 
 ## 5. Schedule (7 days)
 
@@ -124,7 +134,7 @@ Production notes: demo the zh-HK prototype (more complete than the tested en-GB 
 | Mon 9 – Tue 10 | Annotate original screenshots; export figures from Figma; export Maze raw data; draw the site map; each member brings 3–4 references; Researcher drafts §5 from §1–2 |
 | Wed 11 | First full draft of every section |
 | Thu 12 | Lead integrates and checks page count; PPT draft; charts final |
-| Fri 13 | Record video segments; check the Figma link from a logged-out browser |
+| Fri 13 | Record video segments; check the Figma link from a logged-out browser. The link in the report should open the en-GB page (`node-id=0-1`) and its prototype flow, not the first page, which is the Chinese one |
 | Sat 14 | Edit video; proofread; check every number against the Maze PDF |
 | Sun 15 | Buffer; submit zip (report + PPT) on Canvas and upload video by early evening |
 
@@ -150,7 +160,7 @@ Production notes: demo the zh-HK prototype (more complete than the tested en-GB 
    - [user-test/participants.md](user-test/participants.md) joins the CSVs with the participant sheet. It has the profile, a P1–P9 × task results matrix, a table per task with each participant's result, time, clicks, misclicks and path, the answers to every question, and what the per-participant data adds. **Use it for Appendix A.**
    - [user-test/maze_csv_summary.py](user-test/maze_csv_summary.py) rebuilds those tables from the CSVs and stops if any total stops matching the PDF.
 3. **Task script:** done; verbatim wording of all 21 blocks is in [user-test/maze-figures.md](user-test/maze-figures.md) §3.
-4. **Accessibility audit of the original app** (bonus 2%: "documented accessibility audit of the existing app (e.g. WCAG basics: contrast, touch target size, text scaling, screen-reader compatibility)"). Owner: Moling. **Mostly done (8 Nov):** [report/appendix-d-accessibility-audit.md](report/appendix-d-accessibility-audit.md) has the method, a 10-row results table, Figure D.1 ([report/figures/audit/appendix-d-contrast-targets.png](report/figures/audit/appendix-d-contrast-targets.png)), a per-screen table of what the app exposes to screen readers, about 60 words for §2 or §4, and how the redesign answers each finding. Results:
+4. **Accessibility audit of the original app** (bonus 2%: "documented accessibility audit of the existing app (e.g. WCAG basics: contrast, touch target size, text scaling, screen-reader compatibility)"). Owner: Moling. **Done (8 Nov):** [report/appendix-d-accessibility-audit.md](report/appendix-d-accessibility-audit.md) has the method, a 10-row results table, Figure D.1 ([report/figures/audit/appendix-d-contrast-targets.png](report/figures/audit/appendix-d-contrast-targets.png)), a per-screen table of what the app exposes to screen readers, about 60 words for §2 or §4, and how the redesign answers each finding. Results:
    - Contrast: main text passes. Search placeholder 1.38:1, Nearby mode buttons 1.92:1 and the slate bars 4.37:1 fail. All three are confirmed on an iPhone (v2.3.39, 8 Nov), which also shows the Nearby empty-state message at 1.66:1.
    - Targets: stop icons 26 pt (meet 24 pt, under 44 pt); the planner star fails WCAG 2.5.8.
    - Text: no text-size setting in the app; it ignores iOS Larger Text; text already cut off at the default size.
@@ -178,12 +188,12 @@ Production notes: demo the zh-HK prototype (more complete than the tested en-GB 
    - verified reserves, which can bring the total to 20 if §5.1 discusses sample size.
 
    The drafts' unverified citations (Czaja et al. on 44 pt; Kurniawan & Zaphiris) were replaced on 8 Nov. No peer-reviewed study of a Hong Kong bus app was found; Chen & Chan (2014) on older Hong Kong adults is the local source.
-8. **Site map diagram:** done: [report/figures/site-map.png](report/figures/site-map.png), built from the zh-HK prototype links.
-9. **Iteration evidence:** the timeline is done ([report/05-4-design-iteration.md](report/05-4-design-iteration.md)), and the three-date Home strip is at [report/figures/iteration/F1-home-iteration-strip.png](report/figures/iteration/F1-home-iteration-strip.png). Still open:
+8. **Site map diagram:** done: [report/figures/site-map.png](report/figures/site-map.png). Rebuilt on 8 Nov from the en-GB prototype links, in English. Screens that are drawn but not linked have dashed outlines.
+9. **Iteration evidence:** the timeline is done ([report/05-4-design-iteration.md](report/05-4-design-iteration.md)), and the three-date strip is at [report/figures/iteration/F3A-route-search-iteration-strip.png](report/figures/iteration/F3A-route-search-iteration-strip.png). It shows English route search results, one Figma frame at 28 Oct, 30 Oct and 5 Nov. It replaces the earlier zh-HK Home strip (`F1-home-*`), which is not used, because v1 had no English Home. Still open:
    - Before the report gives a specific reason for the 5 Nov arrival-row changes, confirm it with Moling.
    - Ask whether any change was made after a pilot or informal feedback (that would count).
 
-**Design QA notes:** the six issues found on 8 Nov are reported as limitations (see "Limitations to state" in §3). One knock-on: the caption on Original vs Redesign board 08 says the 200% layout is "still clear", so the report must not repeat that claim.
+**Design QA notes:** the design issues found on 8 Nov are reported as limitations (see "Limitations to state" in §3). One knock-on: the caption on Original vs Redesign board 08 says the 200% layout is "still clear", so the report must not repeat that claim.
 
 ## 7. Candidate references (superseded)
 
