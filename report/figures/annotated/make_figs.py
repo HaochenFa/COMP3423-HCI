@@ -15,8 +15,8 @@ TOP, BOTTOM = 40, 40
 CAP_GAP = 16
 
 
-def png(name):
-    return Panel(f"{SRC}/{name}", TB, name)
+def png(name, cap=None):
+    return Panel(f"{SRC}/{name}", TB, cap or name)
 
 
 def build(out, panels, gutters, annotate, entries, ml=60, mr=60, legend="below",
@@ -63,11 +63,11 @@ def build(out, panels, gutters, annotate, entries, ml=60, mr=60, legend="below",
 # ---------------------------------------------------------------- F1 Home
 def f1(outdir):
     ads = Panel(f"{SRC}/cropped/moling-ads-interstitial.jpeg", (0, 0, 1269, 920),
-                "cropped/moling-ads-interstitial.jpeg  (three phone captures)")
-    games = png("t7-games-tab.png")
+                "Home, a bank advert and Home again (three phone captures)")
+    games = png("t7-games-tab.png", "Games tab")
     # phone capture; drop the black bars above and below the advert (rows 0-141, 1858-1999)
     launch = Panel(f"{SRC}/t1-launch-fullscreen-ad.png", (0, 142, 920, 1858),
-                   "t1-launch-fullscreen-ad.png")
+                   "Advert on opening (iPhone)")
 
     def ann(f, l, a, g):
         # 1 full-screen advert on opening the app; the only exit is the small skip button
@@ -110,10 +110,10 @@ def f1(outdir):
 
 # ---------------------------------------------------------------- F2 Save
 def f2(outdir):
-    p1 = png("t2-stop-expanded-unlabelled-icons.png")
-    p2 = png("t2-hidden-save-stop-menu.png")
-    p3 = png("t2-favourites-after-save.png")
-    p4 = png("t3-route-detail-map-mascots.png")
+    p1 = png("t2-stop-expanded-unlabelled-icons.png", "Route detail, stop expanded")
+    p2 = png("t2-hidden-save-stop-menu.png", "Save hidden in a menu")
+    p3 = png("t2-favourites-after-save.png", "Favourites after saving")
+    p4 = png("t3-route-detail-map-mascots.png", "Route map with mascots")
 
     def ann(f, a, b, c, d):
         # 1 four unlabelled round icons
@@ -156,12 +156,12 @@ def f2(outdir):
 
 # ---------------------------------------------------------------- F3 Trip planning
 def f3(outdir):
-    p1 = png("t3-search-route-number-only.png")
-    p2 = png("t4-planner-null-origin.png")
-    p3 = png("t4-planner-ambiguous-stops.png")
-    p4 = png("t4-planner-night-routes-daytime.png")
-    p5 = png("t4-planner-ai-changes-stops.png")
-    p6 = png("t4-planner-error-call-hotline.png")
+    p1 = png("t3-search-route-number-only.png", "Search by route number")
+    p2 = png("t4-planner-null-origin.png", "Planner: origin")
+    p3 = png("t4-planner-ambiguous-stops.png", "Stop search results")
+    p4 = png("t4-planner-night-routes-daytime.png", "Route results")
+    p5 = png("t4-planner-ai-changes-stops.png", "Smart Suggestion")
+    p6 = png("t4-planner-error-call-hotline.png", "No result found")
 
     def ann(f, a, b, c, d, e, g):
         # 1 search box accepts route numbers only
@@ -205,10 +205,10 @@ def f3(outdir):
 
 # ---------------------------------------------------------------- F4 Nearby
 def f4(outdir):
-    p1 = png("t5-nearby-stop-code-entry.png")
-    p2 = png("t5-nearby-landmarks-location-off.png")
+    p1 = png("t5-nearby-stop-code-entry.png", "Nearby: stop-code entry")
+    p2 = png("t5-nearby-landmarks-location-off.png", "Landmarks, location off")
     p3 = Panel(f"{SRC}/cropped/moling-nearby-landmarks.jpeg", (0, 0, 977, 1062),
-               "cropped/moling-nearby-landmarks.jpeg  (team annotation kept as is)")
+               "Stops and landmarks (phone capture, team note)")
 
     def ann(f, a, b, c):
         # 1 stop code required
@@ -237,8 +237,8 @@ def f4(outdir):
 def f5(outdir):
     # iPhone capture, v2.3.39: the whole 26-item menu fits on screen
     p1 = Panel(f"{SRC}/t6-menu-grid-iphone-26-items.png", (0, 0, 920, 2000),
-               "t6-menu-grid-iphone-26-items.png")
-    p2 = png("t7-language-no-cancel.png")
+               "More menu, 26 items (iPhone)")
+    p2 = png("t7-language-no-cancel.png", "Language pop-up")
 
     def ann(f, a, b):
         # 1 the 26-item grid
@@ -274,12 +274,12 @@ def f5(outdir):
 
 # ---------------------------------------------------------------- F3b Picking a place (iPhone, v2.3.39)
 def f3b(outdir):
-    def ip(name):
-        return Panel(f"{SRC}/{name}", (0, 0, 920, 2000), name)
-    p1 = ip("t4-planner-iphone-null-origin.png")
-    p2 = ip("t4-planner-iphone-pick-region.png")
-    p3 = ip("t4-planner-iphone-pick-district-area.png")
-    p4 = ip("t4-planner-iphone-pick-on-map.png")
+    def ip(name, cap):
+        return Panel(f"{SRC}/{name}", (0, 0, 920, 2000), cap)
+    p1 = ip("t4-planner-iphone-null-origin.png", "Planner opens")
+    p2 = ip("t4-planner-iphone-pick-region.png", "Step 1: region")
+    p3 = ip("t4-planner-iphone-pick-district-area.png", "Steps 2 and 3: district, area")
+    p4 = ip("t4-planner-iphone-pick-on-map.png", "Step 4: map")
 
     def ann(f, a, b, c, d):
         # 1 origin starts as "null (現在位置)"

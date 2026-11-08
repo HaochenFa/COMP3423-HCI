@@ -1,0 +1,14 @@
+{
+  "name": "comp3423-app1933-report",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Builds the COMP3423 App1933 final report (DOCX) from the text in part1-4.js and the figures in report/figures.",
+  "scripts": {
+    "figures": "python3 figs.py",
+    "build": "node build_report.js",
+    "check": "./check.sh"
+  },
+  "dependencies": {
+    "docx": "^9.15.3"
+  }
+}
