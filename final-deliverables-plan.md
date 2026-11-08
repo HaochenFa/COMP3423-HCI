@@ -87,7 +87,12 @@ Present the §2 accepted points as proposed changes in Future Work. Markers may 
 
 The accessibility pass (a 200% check, then arrival-row changes) is the closest thing to iteration after findings, from our own expert review rather than user testing.
 
-**Limitations to state (6).** n = 9; tested in English only, while one target group is older Cantonese speakers; participant profile not yet documented (see §6); the en-GB test page had fewer working interactions than the full design, which inflates misclicks and caused one failure; Maze's task panel blocked a target once; one comprehension question was ambiguously worded; no screen-reader testing; at 200% some secondary text on the More screen overlaps (found in our own audit); no re-test.
+**Limitations to state (6).** n = 9; tested in English only, while one target group is older Cantonese speakers; participant profile not yet documented (see §6); the en-GB test page had fewer working interactions than the full design, which inflates misclicks and caused one failure; Maze's task panel blocked a target once; one comprehension question was ambiguously worded; no screen-reader testing; no re-test. Design issues found in our own audit of the frozen file (decided 8 Nov to report as limitations, not fix):
+- at 200% text, two secondary descriptions on the More screen (S2, S2B) wrap into the row below;
+- on S5, S6 and S7 (zh-HK) the 繁 language label is white on a white pill;
+- the "目前位置" label on F4B is `#BBBBBB` on white (1.92:1, below WCAG 1.4.3);
+- the Home search bar (F1) is 24 pt tall in the final file: it meets WCAG 2.5.8's 24 pt minimum but not the 44 pt the rest of the design follows. It was taller on 30 Oct and had shrunk by 3 Nov (visible in the Home iteration strip);
+- the 111 frames added on 2 Nov so every tap responds (sections 互動補全, 07, 08) are wireframe-level: plain outlined buttons and list rows, no cards or ETA styling, dialogs without the app header, and some prototype-control copy such as 測試：找不到的地點 and 模擬前進一站. The core 31 screens carry the visual design.
 
 **Future direction (pick one).** Recommended: **a stop page reachable from search, the map and Home cards, with a save button on it**, justified by the save results (22.2% expected path, both comments, only half of those who reached the route screen finding it from the Home card) and by the participants who looked for the stop in Nearby, the map or search. Alternative: a moderated study in Cantonese with participants aged 60+, though that is an evaluation step rather than a development direction.
 
@@ -119,26 +124,34 @@ Production notes: demo the zh-HK prototype (more complete than the tested en-GB 
 
 ## 6. Gaps to close (missing evidence = 0 marks)
 
-1. **Participant profile:** age range, background, recruitment, test date(s), in person or remote, device. Was anyone 60+? The checkpoint promised at least one; if not, say so in limitations.
-2. **Per-participant raw export from Maze** (CSV with timestamps): markers check "timestamps, per-participant, per-task metrics", which neither the PDF nor the shared online report contains (the online report shows aggregated paths only). Export it from the Maze project's Results page before the plan or trial expires.
+1. **Participant profile:** age range, background, recruitment, test date(s), in person or remote, device. Was anyone 60+? The checkpoint promised at least one; if not, say so in limitations. *Chenyang is collecting this (asked 8 Nov).*
+2. **Per-participant raw export from Maze** (CSV with timestamps): markers check "timestamps, per-participant, per-task metrics", which neither the PDF nor the shared online report contains (the online report shows aggregated paths only). Export it from the Maze project's Results page before the plan or trial expires. *Chenyang (asked 8 Nov).*
 3. **Task script:** done; verbatim wording of all 21 blocks is in [user-test/maze-figures.md](user-test/maze-figures.md) §3.
-4. **Accessibility audit of the original app** (contrast, target sizes, text scaling, screen reader) for the 2% bonus item; check whether Moling's audit exists in writing. The redesign's own audit figures are in the Overall Design draft §3.7.
-5. **Annotated original screenshots:** only Moling's two JPEGs are annotated; the Feature Details draft lists the callouts for each.
-6. **Xulu Zhang's SID** for the cover page.
-7. **References:** none written up yet; see §7.
-8. **Site map diagram:** not yet drawn.
-9. **Iteration evidence:** the timeline is done ([report/05-4-design-iteration.md](report/05-4-design-iteration.md)). Still open:
+4. **Accessibility audit of the original app** (bonus 2%: "documented accessibility audit of the existing app (e.g. WCAG basics: contrast, touch target size, text scaling, screen-reader compatibility)"). Owner: Moling. Four checks:
+   - contrast of the main text and colour pairs, measured from the existing screenshots;
+   - touch-target sizes of the key controls (≡ icon column, tab bar, menu grid);
+   - text scaling: set the phone's text size to the largest and capture whether the app follows;
+   - screen reader: VoiceOver or TalkBack on three tasks (check next bus, save a stop, search), noting what is announced for unlabelled icons.
+
+   The last two need a real phone. Present it as a one-page table (check, WCAG criterion, result, evidence image) in Appendix D, plus two or three lines in §2 or §4.
+5. **Annotated original screenshots:** enough screenshots exist (about 40, plus 2 annotated phone captures). What is missing is annotation. The Original vs Redesign boards caption each screenshot, but nothing on the screenshots points at the problem. The rubric asks for "annotated evidence from the real existing app". Add numbered callouts (box or arrow plus short label) on top of the screenshot without changing it; the Feature Details draft lists the callouts for each feature.
+6. **Xulu Zhang's SID** for the cover page. *Haochen will fill it in.*
+7. **References:** done. [report/references.md](report/references.md) has:
+   - 18 references checked against DOI records and publisher pages (6 theory, 5 domain, 7 modality, older adults and accessibility);
+   - six Related Work themes, each ending "→ so in F_n we …";
+   - verified reserves, which can bring the total to 20 if §5.1 discusses sample size.
+
+   The drafts' unverified citations (Czaja et al. on 44 pt; Kurniawan & Zaphiris) were replaced on 8 Nov. No peer-reviewed study of a Hong Kong bus app was found; Chen & Chan (2014) on older Hong Kong adults is the local source.
+8. **Site map diagram:** done: [report/figures/site-map.png](report/figures/site-map.png), built from the zh-HK prototype links.
+9. **Iteration evidence:** the timeline is done ([report/05-4-design-iteration.md](report/05-4-design-iteration.md)), and the three-date Home strip is at [report/figures/iteration/F1-home-iteration-strip.png](report/figures/iteration/F1-home-iteration-strip.png). Still open:
    - Before the report gives a specific reason for the 5 Nov arrival-row changes, confirm it with Moling.
    - Ask whether any change was made after a pilot or informal feedback (that would count).
-   - Export the dated Home F1 strip from version history.
 
-**Design QA notes (found 8 Nov while auditing the frozen file; the team decides whether these count as bug fixes or go into limitations):**
-- On S5, S6 and S7 (zh-HK) the 繁 language button label is white on a white pill, so it is invisible.
-- At 200% text, two secondary descriptions on the More screen (S2, S2B) wrap into the row below. The caption on Original vs Redesign board 08 says "layout still clear", which is not accurate.
-- The dialog and flow screens added for interaction completeness (zh-HK sections 互動補全, 07, 08) use plain outlined buttons and unstyled text, unlike the core screens. Markers clicking through the prototype will see them.
-- The "目前位置" label on F4B is `#BBBBBB` on white (contrast 1.92:1).
+**Design QA notes:** the five issues found on 8 Nov are reported as limitations (see "Limitations to state" in §3). One knock-on: the caption on Original vs Redesign board 08 says the 200% layout is "still clear", so the report must not repeat that claim.
 
-## 7. Candidate references (verify each before citing; use only those you actually use)
+## 7. Candidate references (superseded)
+
+The verified list is [report/references.md](report/references.md). The candidates below are kept for the record; some details below were corrected there, e.g. WCAG 2.2 is cited as W3C (2024).
 
 HCI theory
 - Nielsen, J. (1994). Enhancing the explanatory power of usability heuristics. *Proc. CHI '94*, 152–158. (source of the ten heuristics, H1–H10)

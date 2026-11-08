@@ -51,7 +51,11 @@ The version history agrees with this.
 
 ## How to use this in the report
 
-- **Figure (one, half-width strip):** the same screen at three dates, exported from version history. Use Home F1 at 28 Oct 14:39 (v1: 390 × 844, device mock-up), 30 Oct 00:15 (402 × 874, official icon, split pages) and 5 Nov 17:56 (final). Label each with its date and version name. To export: open the version in version history, select the frame, Export PNG 2×.
+- **Figure (done):** [figures/iteration/F1-home-iteration-strip.png](figures/iteration/F1-home-iteration-strip.png), Home F1 (zh-HK) at 28 Oct 14:39, 30 Oct 00:15 and 5 Nov 17:56, captured from the version history. The single captures are in the same folder. What the strip shows:
+  - v1 still has eyebrow labels (快捷到達, 步行可達), pink-tinted arrival rows, red ETA numbers and a floating 繁體中文 pill.
+  - v2 removes all four (the visual clean-up), adds the status bar and the official icon, and moves the language control to the header button.
+  - The final adds the two-line status block. Its search bar is thinner (24 pt), which is listed as a limitation.
+  - For a sharper print version, export the same frames at 2× from version history (open the version, select the frame, Export PNG).
 - **Optional second figure:** route detail F2 arrival row, 3 Nov 21:34 vs 5 Nov 17:56 (badge moved beside the minutes). This is the only before/after pair that sits next to an evaluation step.
 - **Growth line for the text:** 13 screens (28 Oct) → 56 bilingual screens (28 Oct) → 62 on two pages (29 Oct) → 142 frames driven by variables on zh-HK (2 Nov).
 - **Honest framing for rubric item "prototype visibly changed in response to test findings":**
@@ -70,5 +74,5 @@ The version history agrees with this.
 
 - What the 17:06–17:55 session on 2 Nov changed. The counts and structure are unchanged; property-level detail was not compared for that stretch.
 - Whether any change was made after a pilot or informal feedback before the Maze test. Ask the team. If one was, it counts as iteration evidence.
-- The project notes date the visual clean-up to 28 Oct, but the version history cannot show which session it was in. The 16:03–16:10 session made no structural change, which fits a styling pass.
+- The exact session of the visual clean-up. The Home strip shows it happened between 28 Oct 14:39 and 30 Oct 00:15, and the project notes date it to 28 Oct. The 16:03–16:10 session made no structural change, which fits a styling pass.
 - The file's history starts on 28 Oct. The checkpoint report (12 Oct) mentions 14 screens in Figma, but the earliest version here has 13. The single-language F3B demo screen may be the difference, or the earlier work may be in another file. Check before writing "14".

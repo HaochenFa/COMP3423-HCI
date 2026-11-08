@@ -46,7 +46,7 @@ Route detail (F2 family: stop list, timetable, notices, alight alert) is reached
 
 Screens follow a naming scheme that also structures the Figma file: **O** onboarding, **F** feature screens, **S** states and edge cases, **M** modals and sheets. The six sections of the file (01 Onboarding & location, 02 Home & Saved, 03 Route detail & tools, 04 Trip planner & route search, 05 Nearby stops & landmarks, 06 More & accessibility) follow the same order as the tabs.
 
-> **Figure 3.2** Site map: five tabs and the screens under each, with route detail as a shared destination. *To be drawn (not yet in the repo); build from the table above.*
+> **Figure 3.2** Site map: five tabs and the screens under each, with route detail as a shared destination. File: [figures/site-map.png](figures/site-map.png) (SVG and Graphviz source alongside), built from the prototype links on the zh-HK page. The language button on Home (繁 / EN) also opens M1; mention this in the caption rather than drawing the line.
 
 ## 3.4 Walkthrough
 
@@ -82,13 +82,13 @@ Table 3.2 lists the decisions that apply across the whole app and the principle 
 | Every arrival carries a text label, **實時** Live or **預定** Scheduled, as well as a colour | F1, F2, F4, F3A | Visibility of system status (H1); colour is never the only cue (WCAG 1.4.1) |
 | A status line shows the last update; offline and disruption states say what is wrong and what to do | F1, S5, S6, S7 | Visibility of system status (H1); real-time information builds trust only when its reliability is clear (Ferris et al., 2010; Watkins et al., 2011) |
 | Five labelled tabs instead of six items plus a grid of about 30 icons; settings grouped into three headed sections | Tab bar, F5 | Hick's law (Hick, 1952); recognition rather than recall (H6) |
-| Primary actions are large, full-width buttons; ☆ and row targets are at least 44 pt; navigation sits in the bottom tab bar within thumb reach | All | Fitts' law (Fitts, 1954); one-handed thumb use (Parhi et al., 2006); Apple's 44 pt minimum |
+| Primary actions are large, full-width buttons; ☆ and row targets are at least 44 pt; navigation sits in the bottom tab bar within thumb reach | All | Fitts' law (Fitts, 1954); one-handed thumb use (Parhi et al., 2006); Apple's recommended 44 × 44 pt control size (Apple, n.d.) |
 | Search by place name, with the origin preset to the current location | F3, S4 | Match between system and the real world (H2); recognition rather than recall (H6); error prevention (H5) |
 | Undo instead of confirmation dialogs for save and remove; confirmation only for "remove all" | F2A, Saved | User control and freedom (H3); permit easy reversal of actions (Shneiderman et al., 2016) |
 | Errors are shown at the field that caused them, with a way to recover | S1, F3C | Help users recognise, diagnose and recover from errors (H9) |
 | One labelled, closable ad space; no pop-ups, games or mascots | F1, F5 | Aesthetic and minimalist design (H8); avoiding dark patterns such as nagging (Gray et al., 2018) |
 | The same components (route badge, arrival block, tab bar) behave the same on every screen | All | Consistency and standards (H4) |
-| Related information is grouped in cards with clear headings | All | Gestalt proximity and common region |
+| Related information is grouped in cards with clear headings | All | Grouping by proximity and a shared card (common region); no source cited yet |
 
 *Table 3.2. Cross-cutting design decisions and the principles behind them (H1–H10 = Nielsen's heuristics).*
 
@@ -111,9 +111,9 @@ Accessibility was designed in rather than added at the end, mainly for older pas
 - **High contrast.** A second variable collection (standard / high contrast) controls text and border colours on all 31 core screens; turning it on darkens secondary text and strengthens borders everywhere at once.
 - **Calm mode.** Removes the ad card from Home (its visibility is tied to the calm-mode setting) and, in a built app, would also reduce animation and non-essential extras, in the spirit of WCAG 2.2.2 Pause, Stop, Hide and 2.3.3 Animation from Interactions.
 - **Contrast (measured).** We computed WCAG contrast ratios for every text layer on the 31 core zh-HK screens against its background. Body text and labels meet the 4.5:1 AA threshold: white on brand red and red on white are 5.88:1, secondary grey `#696969` on white 5.49:1, the Live badge 4.84:1 and the Scheduled badge 5.55:1. The exceptions are a dimmed "past departures" figure in the timetable (4.17:1), a decorative street label on the illustrative map (3.99:1) and one placeholder label on the Landmarks screen (1.92:1).
-- **Target size (measured).** Of 657 tappable elements on the core screens (excluding the tab bar, whose items are about 77 × 59 pt), none is smaller than 24 pt, so all meet WCAG 2.5.8 Target Size (Minimum), and 594 (90%) are at least 44 pt in both directions, the size recommended for older users (Czaja et al., 2019). The smaller ones are route badges (about 31–38 pt tall) and toggles (50 × 30 pt).
+- **Target size (measured).** Of 657 tappable elements on the core screens (excluding the tab bar, whose items are about 77 × 59 pt), none is smaller than 24 pt, so all meet WCAG 2.5.8 Target Size (Minimum) (W3C, 2024), and 594 (90%) are at least 44 pt in both directions, the size Apple recommends for iOS controls (Apple, n.d.) and the WCAG 2.5.5 enhanced level (W3C, 2024). One exception on Home is the search bar, which is only 24 pt tall (see limitations). The smaller ones are route badges (about 31–38 pt tall) and toggles (50 × 30 pt).
 - **Not colour alone.** Live, Scheduled, Offline, Diverted and Suspended are always written out, often with an icon.
-- **Less memory load.** Place-name search, the preset origin, suggestions with categories and saved routes on Home reduce what users must remember, which matters for older adults (Czaja et al., 2019; Kurniawan & Zaphiris, 2005).
+- **Less memory load.** Place-name search, the preset origin, suggestions with categories and saved routes on Home reduce what users must remember, in line with research-based guidelines for older users that favour recognition over recall and fewer choices (Zaphiris et al., 2005).
 - **Choice of language and of location.** Three interface languages, each listed in its own script, and every location-dependent screen has a non-location alternative (S4).
 
 What we could not do: Figma cannot test screen-reader behaviour, so VoiceOver labels and reading order are specified only at the design level and remain untested (Section 6).

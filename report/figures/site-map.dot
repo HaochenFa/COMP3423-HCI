@@ -1,0 +1,92 @@
+// Figure 3.2 Site map of the App1933 redesign (zh-HK prototype).
+// Built from the prototype links on the zh-HK page of the Figma file (read 8 Nov 2026).
+// Render: dot -Tsvg site-map.dot -o site-map.svg ; dot -Tpng -Gdpi=200 site-map.dot -o site-map.png
+digraph sitemap {
+  graph [rankdir=TB, fontname="Heiti TC", fontsize=13, nodesep=0.25, ranksep=0.45, pad=0.3, bgcolor="white", newrank=true, compound=true];
+  node  [shape=box, style="rounded,filled", fillcolor="#F5F5F5", color="#D0D0D0", fontname="Heiti TC", fontsize=11, fontcolor="#1A1A1A", margin="0.12,0.06"];
+  edge  [color="#8A8A8A", arrowsize=0.6, fontname="Heiti TC", fontsize=9, fontcolor="#555555"];
+
+  // First launch
+  subgraph cluster_launch {
+    label="首次使用 First launch"; style="rounded,dashed"; color="#B0B0B0"; fontcolor="#555555";
+    O1 [label="O1 歡迎 Welcome\n選語言 choose language"];
+    O2 [label="O2 定位權限\nLocation permission"];
+    S4 [label="S4 定位關閉\nLocation off:\n以地點名稱搜尋 search by place"];
+    O1 -> O2;
+    O2 -> S4 [label="暫時不用\nNot now"];
+  }
+
+  TAB [label="底部導航 Tab bar (on every core screen)\n主頁 Home   行程 Trip   附近 Nearby   收藏 Saved   更多 More", shape=box, style="filled", fillcolor="#C8102E", color="#C8102E", fontcolor="white", fontsize=12];
+  O2 -> TAB [label="允許 Allow"];
+  S4 -> TAB [style=dashed];
+
+  subgraph cluster_home {
+    label="主頁 Home"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
+    F1  [label="F1 主頁\n收藏路線排先，實時 / 預定\nsaved routes first, Live / Scheduled"];
+    F1A [label="F1A 展開路線卡\nexpanded card (in place)"];
+    SH  [label="S5 載入 Loading\nS6 離線 Offline (cached)\nS7 黑雨 Service disruption"];
+    F1 -> F1A;
+    F1 -> SH [style=dotted, arrowhead=none];
+  }
+
+  subgraph cluster_trip {
+    label="行程 Trip"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
+    F3  [label="F3 行程規劃 Trip planner\n起點 = 目前位置\norigin = current location"];
+    F3A [label="F3A 推薦方案\nRecommended options"];
+    F3C [label="F3C 已更正 + 改回原本輸入\ntypo corrected, undo"];
+    S1  [label="S1 找不到結果\nNo results"];
+    F3 -> F3A; F3 -> F3C; F3 -> S1;
+  }
+
+  subgraph cluster_nearby {
+    label="附近 Nearby"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
+    F4  [label="F4 附近站點\nstops: street, walk, next bus"];
+    F4A [label="F4A 展開路線\nroute expanded"];
+    F4B [label="F4B 地標 Landmarks\ncategory, nearest stop, buses"];
+    F4C [label="F4C 地圖 Map view"];
+    F4 -> F4A; F4 -> F4B; F4 -> F4C; F4C -> F4A;
+  }
+
+  subgraph cluster_saved {
+    label="收藏 Saved"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
+    F1B [label="F1B 收藏\nroutes and stops"];
+    F1C [label="F1C 未有收藏\nEmpty state"];
+    MG  [label="收藏管理 Manage\nsort, clear, restore"];
+    F1B -> MG; F1B -> F1C [style=dotted, arrowhead=none];
+  }
+
+  subgraph cluster_more {
+    label="更多 More"; style="rounded"; color="#C8102E"; fontcolor="#C8102E"; fontsize=13;
+    F5  [label="F5 更多：分組設定\ngrouped settings"];
+    TS  [label="文字大小 Text size\n100%, 150%, 200%"];
+    HC  [label="高對比 High contrast"];
+    CM  [label="靜心模式 Calm mode"];
+    M1  [label="M1 語言 Language\n繁體中文、简体中文、English"];
+    F5 -> TS; F5 -> HC; F5 -> CM; F5 -> M1;
+  }
+
+  TAB -> F1  [lhead=cluster_home];
+  TAB -> F3  [lhead=cluster_trip];
+  TAB -> F4  [lhead=cluster_nearby];
+  TAB -> F1B [lhead=cluster_saved];
+  TAB -> F5  [lhead=cluster_more];
+
+  // Shortcuts across tabs
+  F1 -> F4C [style=dashed, color="#C8102E", fontcolor="#C8102E", label="地圖檢視\nMap view", constraint=false];
+
+  // Shared destination: route detail
+  subgraph cluster_route {
+    label="路線詳情 Route detail: the same screen from any route badge"; style="rounded,filled"; fillcolor="#FFFFFF"; color="#1A1A1A"; fontcolor="#1A1A1A"; fontsize=13;
+    F2  [label="F2 路線詳情\n每個車站都有 ☆ 及「收藏此站」\n☆ on every stop, labelled Save", fillcolor="#FFFFFF", color="#1A1A1A"];
+    F2A [label="F2A 已收藏 + 復原\nsaved, with Undo"];
+    F2B [label="F2B 時間表\nTimetable"];
+    F2C [label="F2C 特別通告\nService notices"];
+    M2  [label="M2 下車提示設定\nAlight alert set-up"];
+    F2D [label="F2D 提示進行中\nAlert in progress"];
+    FR  [label="完整路線 Full stop lists\n7 routes, both directions"];
+    F2 -> F2A; F2 -> F2B; F2 -> F2C; F2 -> M2; M2 -> F2D;
+    F2 -> FR [style=dotted, arrowhead=none];
+  }
+
+  { F1A F1B F3A F4A F4B } -> F2 [color="#1A1A1A", style=dashed, lhead=cluster_route];
+}

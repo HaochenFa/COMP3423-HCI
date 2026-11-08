@@ -78,7 +78,7 @@
 
 > **Figure 4.4a** Annotated originals. Sources: `t5-nearby-stop-code-entry.png`, `t5-nearby-landmarks-location-off.png`, `cropped/moling-nearby-landmarks.jpeg` (already annotated: "No visible landmark identification"). Callouts: ① stop code required; ② location off: no alternative offered; ③ stops identified by codes; ④ landmark rows show distance only.
 
-**(b) HCI principles.** *Violated:* match between system and the real world (H2); recognition rather than recall (H6); help users recover (H9) when location is off. Rows without names also fail screen-reader users, as there is no text to read out (WCAG 1.1.1, 1.3.1). *Applied:* H2, H6, H9, and Gestalt proximity and common region to group each stop with its buses.
+**(b) HCI principles.** *Violated:* match between system and the real world (H2); recognition rather than recall (H6); help users recover (H9) when location is off. Rows without names also fail screen-reader users, as there is no text to read out (WCAG 1.1.1, 1.3.1; W3C, 2024). *Applied:* H2, H6, H9, and grouping each stop with its buses in one card (proximity and common region).
 
 **(c) Redesign** (Figure 4.4b).
 
@@ -111,4 +111,4 @@
 
 > **Figure 4.5b** Before/after. Left: originals from 4.5a. Right: F5 (45:2451), M1 (45:2452), S2B (358:2534), S2 (45:2453). Figma board "08 · F5 More & accessibility".
 
-**(d) Rationale.** Grouping a handful of real settings under clear headings makes each one quick to find (Hick's law, H8). Text size and contrast are the adjustments older users most often need (Czaja et al., 2019; Kurniawan & Zaphiris, 2005), and putting them at the top of More follows where both iOS and Android place display settings, so users who look for "settings" find them. Calm mode answers the anxiety about adverts that came up in our journey research. A language choice should never trap the user, so every sheet can be closed and every change takes effect immediately. *Tested in Maze: blocks 18–20 (adjust text size, then read Bus 116 at 200%).*
+**(d) Rationale.** Grouping a handful of real settings under clear headings makes each one quick to find (Hick's law, H8). Larger, high-contrast text is a standing recommendation for older users (Zaphiris et al., 2005), and both Apple (n.d.) and WCAG 1.4.4 (W3C, 2024) ask for text that enlarges to 200%. Putting these settings at the top of More follows where both iOS and Android place display settings, so users who look for "settings" find them. Calm mode answers the anxiety about adverts that came up in our journey research. A language choice should never trap the user, so every sheet can be closed and every change takes effect immediately. *Tested in Maze: blocks 18–20 (adjust text size, then read Bus 116 at 200%).*
