@@ -70,7 +70,7 @@ Page budget: cover 1 + 18.5 body, leaving about half a page spare.
 | 5 | Testing, Results, Discussion | 4 | User Researcher | 5.1 method: participants, recruitment, Maze set-up (21 blocks), task ↔ feature table, metrics, procedure, note on en-GB prototype fidelity. 5.2 results: the §1 table, charts, verbatim quotes. 5.3 discussion: §2. 5.4 iteration: see note below | Task table; stacked bar of direct/indirect/failed; comprehension bar chart; Maze p.14 funnel; satisfaction chart | Real test + raw data in appendix (5), method (4), data + quotes (4), discussion linked to decisions (4), iteration (3) |
 | 6 | Conclusion & Future Work | 1 | Lead | Summary consistent with §5; one future direction; limitations | — | Consistent summary (3), one justified direction (3), honest limitations (2) |
 | — | References | — | Lead | 12–16 refs, APA 7 | — | Markers spot-check 2–3 |
-| — | Appendices | — | Researcher + Accessibility | A. Maze report pages + per-participant export; B. task script (verbatim in maze-figures.md §3); C. Figma and Maze links; D. accessibility audit of the original app; E. extra screens | — | Raw data, task script, Figma URL; accessibility audit (bonus 2%) |
+| — | Appendices | — | Researcher + Accessibility | A. Maze report pages + per-participant export; B. task script (verbatim in maze-figures.md §3); C. Figma and Maze links; D. accessibility audit of the original app ([draft](report/appendix-d-accessibility-audit.md)); E. extra screens | — | Raw data, task script, Figma URL; accessibility audit (bonus 2%) |
 
 **Iteration evidence (5.4), with the design frozen.** The rubric item reads "prototype visibly changed in response to test findings (3)". The dated timeline from Figma version history is in [report/05-4-design-iteration.md](report/05-4-design-iteration.md). In short:
 - 28 Oct: 13 screens (v1).
@@ -127,14 +127,19 @@ Production notes: demo the zh-HK prototype (more complete than the tested en-GB 
 1. **Participant profile:** age range, background, recruitment, test date(s), in person or remote, device. Was anyone 60+? The checkpoint promised at least one; if not, say so in limitations. *Chenyang is collecting this (asked 8 Nov).*
 2. **Per-participant raw export from Maze** (CSV with timestamps): markers check "timestamps, per-participant, per-task metrics", which neither the PDF nor the shared online report contains (the online report shows aggregated paths only). Export it from the Maze project's Results page before the plan or trial expires. *Chenyang (asked 8 Nov).*
 3. **Task script:** done; verbatim wording of all 21 blocks is in [user-test/maze-figures.md](user-test/maze-figures.md) §3.
-4. **Accessibility audit of the original app** (bonus 2%: "documented accessibility audit of the existing app (e.g. WCAG basics: contrast, touch target size, text scaling, screen-reader compatibility)"). Owner: Moling. Four checks:
-   - contrast of the main text and colour pairs, measured from the existing screenshots;
-   - touch-target sizes of the key controls (≡ icon column, tab bar, menu grid);
-   - text scaling: set the phone's text size to the largest and capture whether the app follows;
-   - screen reader: VoiceOver or TalkBack on three tasks (check next bus, save a stop, search), noting what is announced for unlabelled icons.
+4. **Accessibility audit of the original app** (bonus 2%: "documented accessibility audit of the existing app (e.g. WCAG basics: contrast, touch target size, text scaling, screen-reader compatibility)"). Owner: Moling. **Mostly done (8 Nov):** [report/appendix-d-accessibility-audit.md](report/appendix-d-accessibility-audit.md) has the method, a 10-row results table, Figure D.1 ([report/figures/audit/appendix-d-contrast-targets.png](report/figures/audit/appendix-d-contrast-targets.png)), a per-screen table of what the app exposes to screen readers, about 60 words for §2 or §4, and how the redesign answers each finding. Results:
+   - Contrast: main text passes. Search placeholder 1.38:1, Nearby mode buttons 1.92:1 and the slate bars 4.37:1 fail.
+   - Targets: stop icons 26 pt (meet 24 pt, under 44 pt); the planner star fails WCAG 2.5.8.
+   - Text: no text-size setting in the app; text already cut off at the default size.
+   - Screen reader: tabs, the More menu and the language options are labelled. Route rows, stop lists, keypads and all icon-only buttons are not exposed (provisional).
 
-   The last two need a real phone. Present it as a one-page table (check, WCAG criterion, result, evidence image) in Appendix D, plus two or three lines in §2 or §4.
-5. **Annotated original screenshots:** enough screenshots exist (about 40, plus 2 annotated phone captures). What is missing is annotation. The Original vs Redesign boards caption each screenshot, but nothing on the screenshots points at the problem. The rubric asks for "annotated evidence from the real existing app". Add numbered callouts (box or arrow plus short label) on top of the screenshot without changing it; the Feature Details draft lists the callouts for each feature.
+   **Still needs a real iPhone (about 20 minutes, steps in the appendix):** the Larger Text test, and a VoiceOver walk-through to confirm the screen-reader row. Until then, the 04 draft does not claim that the app "ignores the phone's text size".
+5. **Annotated original screenshots:** done (8 Nov). Five figures are in [report/figures/annotated/](report/figures/annotated/), `F1-home-annotated.png` … `F5-more-annotated.png`:
+   - Format: 2480 px wide at 400 dpi (15.7 cm in Word). Numbered red callouts with an English legend.
+   - Screenshot pixels unchanged: only the Mac window frame was cropped off.
+   - Every callout was checked against the screenshot, and the 04 draft's figure captions now match.
+   - Draft claims the screenshots did not support were softened: "advert on launch", "a daytime search", "changes the boarding and alighting stops", "no text-size option anywhere". Restore any of them only with a capture that shows it.
+   - `make_figs.py` re-renders the figures.
 6. **Xulu Zhang's SID** for the cover page. *Haochen will fill it in.*
 7. **References:** done. [report/references.md](report/references.md) has:
    - 18 references checked against DOI records and publisher pages (6 theory, 5 domain, 7 modality, older adults and accessibility);

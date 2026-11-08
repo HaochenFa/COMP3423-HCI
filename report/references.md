@@ -116,7 +116,7 @@ In-text forms: (Apple, n.d.); (World Wide Web Consortium [W3C], 2024) on first u
 - **DOI:** https://doi.org/10.1080/17470215208416600
 - **Checked:** Crossref DOI record; publisher abstract (via OpenAlex), 8 Nov 2026.
 - **Finding:** In choice-reaction experiments with up to ten alternatives, reaction time rose with the amount of information in the choice, which grows with the logarithm of the number of alternatives; people gained information at roughly five bits per second.
-- **Used for:** F5 three headed groups instead of about 30 unsorted icons; five labelled tabs; our position against adding a sixth map tab (test finding 8). Caveat: the experiments used equally likely, unpractised choices.
+- **Used for:** F5 three headed groups instead of 24 unsorted icons; five labelled tabs; our position against adding a sixth map tab (test finding 8). Caveat: the experiments used equally likely, unpractised choices.
 
 ### 2.12 Nielsen (1994)
 - **DOI:** https://doi.org/10.1145/191666.191729
@@ -182,7 +182,7 @@ Edwards et al. show that pop-ups feel most intrusive when people are focused on 
 *Hick (1952); Nielsen (1994); Chandler & Sweller (1991); Zaphiris et al. (2005)*
 
 Hick's law, Nielsen's minimalist-design heuristic (H8) and the ageing guidelines of Zaphiris et al. ("provide fewer choices", "avoid irrelevant information") reach the same advice from experiment, practice and literature review. Hick's experiments used equally likely, unpractised choices, so in a familiar menu grouping and clear labels matter as much as the raw number of items, which is why we grouped settings rather than only cutting them. Chandler and Sweller add a sharper warning: even information that seems useful harms understanding when it is not essential. Our lowest comprehension result fits this: only 3/9 picked out the 2-minute walk on a card that repeats its time values, though the question's wording may also have played a part.
-→ so in F5 we replaced about 30 unsorted icons with three headed groups and kept five tabs, declining a sixth map tab; in F3 the recommended card leads with the total time people decide on, and collapsing its step list by default is a future change.
+→ so in F5 we replaced 24 unsorted icons with three headed groups and kept five tabs, declining a sixth map tab; in F3 the recommended card leads with the total time people decide on, and collapsing its step list by default is a future change.
 
 ### D. Signifiers, feedback and reversible actions (F2, F3)
 *Norman (2013); Shneiderman et al. (2016); Nielsen (1994); W3C (2024)*
