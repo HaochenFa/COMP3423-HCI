@@ -1,0 +1,157 @@
+"Maze ID","Block ID","Block type","Block title","Block description","Tester ID","Started at","Completed at","Study duration (seconds)","Device type","OS","Vendor","Model","Browser","Browser version","Language","Source","Reach email","Fbclid","Mission type","Path","Path (screen names)","Screen ID","Screen name","Screen duration (seconds)","Total duration (seconds)","Direct success","Indirect success","Give up","x","y","Clicked element name","Clicked element type","Clicked element ID","Click type","Total click count","Total misclick count","Misclick rate","Total misclick page count"
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607192590","2026-11-07 11:29:38","2026-11-07 11:36:47",429.3,"mobile","iOS","Apple","iPhone","Instagram","453.0.0.39.58","en-GB","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:601","20:601",1.4,11.88,"TRUE","FALSE","FALSE",63,13,"Content","FRAME","20:602","Click",5,3,"60.00%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607192590","2026-11-07 11:29:38","2026-11-07 11:36:47",429.3,"mobile","iOS","Apple","iPhone","Instagram","453.0.0.39.58","en-GB","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",10.5,11.88,"TRUE","FALSE","FALSE",32,29,"Argyle Centre","TEXT","20:1383","Misclick",5,3,"60.00%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607192590","2026-11-07 11:29:38","2026-11-07 11:36:47",429.3,"mobile","iOS","Apple","iPhone","Instagram","453.0.0.39.58","en-GB","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",10.5,11.88,"TRUE","FALSE","FALSE",62,30,"Argyle Centre","TEXT","20:1383","Misclick",5,3,"60.00%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607192590","2026-11-07 11:29:38","2026-11-07 11:36:47",429.3,"mobile","iOS","Apple","iPhone","Instagram","453.0.0.39.58","en-GB","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",10.5,11.88,"TRUE","FALSE","FALSE",31,31,"Row · To","FRAME","20:1377","Misclick",5,3,"60.00%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607192590","2026-11-07 11:29:38","2026-11-07 11:36:47",429.3,"mobile","iOS","Apple","iPhone","Instagram","453.0.0.39.58","en-GB","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",10.5,11.88,"TRUE","FALSE","FALSE",68,44,"Content","FRAME","20:1363","Click",5,3,"60.00%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607192590","2026-11-07 11:29:38","2026-11-07 11:36:47",429.3,"mobile","iOS","Apple","iPhone","Instagram","453.0.0.39.58","en-GB","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","1:1126","1:1126",0,11.88,"TRUE","FALSE","FALSE",,,,,,,5,3,"60.00%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","608092742","2026-11-07 05:24:58","2026-11-07 05:31:41",403.3,"tablet","Mac OS","Apple","iPad","Safari","27.3","zh-TW","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:601","20:601",10,12.68,"TRUE","FALSE","FALSE",51,13,"Content","FRAME","20:602","Click",3,1,"33.33%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","608092742","2026-11-07 05:24:58","2026-11-07 05:31:41",403.3,"tablet","Mac OS","Apple","iPad","Safari","27.3","zh-TW","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",2.7,12.68,"TRUE","FALSE","FALSE",61,31,"Argyle Centre","TEXT","20:1383","Misclick",3,1,"33.33%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","608092742","2026-11-07 05:24:58","2026-11-07 05:31:41",403.3,"tablet","Mac OS","Apple","iPad","Safari","27.3","zh-TW","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",2.7,12.68,"TRUE","FALSE","FALSE",82,79,"Content","FRAME","20:1363","Click",3,1,"33.33%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","608092742","2026-11-07 05:24:58","2026-11-07 05:31:41",403.3,"tablet","Mac OS","Apple","iPad","Safari","27.3","zh-TW","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","1:1126","1:1126",0,12.68,"TRUE","FALSE","FALSE",,,,,,,3,1,"33.33%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","608091492","2026-11-07 05:19:25","2026-11-07 05:41:48",1343.4,,"Windows",,,"WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:601","20:601",2.3,97.57,"TRUE","FALSE","FALSE",34,43,"Tab Bar","INSTANCE","20:764","Click",2,0,"0.00%",0
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","608091492","2026-11-07 05:19:25","2026-11-07 05:41:48",1343.4,,"Windows",,,"WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",95.3,97.57,"TRUE","FALSE","FALSE",50,79,"Content","FRAME","20:1363","Click",2,0,"0.00%",0
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","608091492","2026-11-07 05:19:25","2026-11-07 05:41:48",1343.4,,"Windows",,,"WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","1:1126","1:1126",0,97.57,"TRUE","FALSE","FALSE",,,,,,,2,0,"0.00%",0
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607587743","2026-11-06 11:43:56","2026-11-06 11:51:34",457.6,,"Windows",,,"Chrome","155.0.0.0","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:601","20:601",22.3,23.95,"TRUE","FALSE","FALSE",81,43,"Button · 87D","FRAME","20:667","Misclick",5,3,"60.00%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607587743","2026-11-06 11:43:56","2026-11-06 11:51:34",457.6,,"Windows",,,"Chrome","155.0.0.0","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:601","20:601",22.3,23.95,"TRUE","FALSE","FALSE",74,45,"Button · 87D","FRAME","20:667","Misclick",5,3,"60.00%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607587743","2026-11-06 11:43:56","2026-11-06 11:51:34",457.6,,"Windows",,,"Chrome","155.0.0.0","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:601","20:601",22.3,23.95,"TRUE","FALSE","FALSE",32,20,"Location Bar · Near Hung Hom Station","FRAME","20:618","Misclick",5,3,"60.00%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607587743","2026-11-06 11:43:56","2026-11-06 11:51:34",457.6,,"Windows",,,"Chrome","155.0.0.0","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:601","20:601",22.3,23.95,"TRUE","FALSE","FALSE",49,15,"Content","FRAME","20:602","Click",5,3,"60.00%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607587743","2026-11-06 11:43:56","2026-11-06 11:51:34",457.6,,"Windows",,,"Chrome","155.0.0.0","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",1.6,23.95,"TRUE","FALSE","FALSE",46,42,"Content","FRAME","20:1363","Click",5,3,"60.00%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607587743","2026-11-06 11:43:56","2026-11-06 11:51:34",457.6,,"Windows",,,"Chrome","155.0.0.0","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","1:1126","1:1126",0,23.95,"TRUE","FALSE","FALSE",,,,,,,5,3,"60.00%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607462892","2026-11-06 03:21:35","2026-11-06 03:28:27",412.7,,"Windows",,,"Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:601","20:601",6.5,9.38,"TRUE","FALSE","FALSE",60,14,"Content","FRAME","20:602","Click",2,0,"0.00%",0
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607462892","2026-11-06 03:21:35","2026-11-06 03:28:27",412.7,,"Windows",,,"Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",2.8,9.38,"TRUE","FALSE","FALSE",53,79,"Content","FRAME","20:1363","Click",2,0,"0.00%",0
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607462892","2026-11-06 03:21:35","2026-11-06 03:28:27",412.7,,"Windows",,,"Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","1:1126","1:1126",0,9.38,"TRUE","FALSE","FALSE",,,,,,,2,0,"0.00%",0
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607092204","2026-11-05 13:19:04","2026-11-05 13:28:14",550.2,,"Mac OS","Apple","Macintosh","Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:601","20:601",7.5,12.96,"TRUE","FALSE","FALSE",32,62,"Tab Bar","INSTANCE","20:764","Click",2,0,"0.00%",0
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607092204","2026-11-05 13:19:04","2026-11-05 13:28:14",550.2,,"Mac OS","Apple","Macintosh","Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",5.4,12.96,"TRUE","FALSE","FALSE",52,78,"Content","FRAME","20:1363","Click",2,0,"0.00%",0
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607092204","2026-11-05 13:19:04","2026-11-05 13:28:14",550.2,,"Mac OS","Apple","Macintosh","Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","1:1126","1:1126",0,12.96,"TRUE","FALSE","FALSE",,,,,,,2,0,"0.00%",0
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","20:601 > 32:2497 > 20:1362 > 1:1126","20:601 > 32:2497 > 20:1362 > 1:1126","20:601","20:601",22.9,47.83,"FALSE","TRUE","FALSE",77,66,"Row · Cross Harbour Tunnel","FRAME","20:701","Misclick",11,8,"72.73%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","20:601 > 32:2497 > 20:1362 > 1:1126","20:601 > 32:2497 > 20:1362 > 1:1126","20:601","20:601",22.9,47.83,"FALSE","TRUE","FALSE",82,62,"2 min · 120 m","TEXT","20:718","Misclick",11,8,"72.73%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","20:601 > 32:2497 > 20:1362 > 1:1126","20:601 > 32:2497 > 20:1362 > 1:1126","20:601","20:601",22.9,47.83,"FALSE","TRUE","FALSE",90,58,"Content","FRAME","20:602","Click",11,8,"72.73%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","20:601 > 32:2497 > 20:1362 > 1:1126","20:601 > 32:2497 > 20:1362 > 1:1126","32:2497","32:2497",23.5,47.83,"FALSE","TRUE","FALSE",75,61,"Stop Pin · 3","FRAME","32:2543","Misclick",11,8,"72.73%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","20:601 > 32:2497 > 20:1362 > 1:1126","20:601 > 32:2497 > 20:1362 > 1:1126","32:2497","32:2497",23.5,47.83,"FALSE","TRUE","FALSE",65,42,"Vector","VECTOR","32:2526","Misclick",11,8,"72.73%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","20:601 > 32:2497 > 20:1362 > 1:1126","20:601 > 32:2497 > 20:1362 > 1:1126","32:2497","32:2497",23.5,47.83,"FALSE","TRUE","FALSE",87,44,"Vector","VECTOR","32:2531","Misclick",11,8,"72.73%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","20:601 > 32:2497 > 20:1362 > 1:1126","20:601 > 32:2497 > 20:1362 > 1:1126","32:2497","32:2497",23.5,47.83,"FALSE","TRUE","FALSE",49,56,"Vector","VECTOR","32:2525","Misclick",11,8,"72.73%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","20:601 > 32:2497 > 20:1362 > 1:1126","20:601 > 32:2497 > 20:1362 > 1:1126","32:2497","32:2497",23.5,47.83,"FALSE","TRUE","FALSE",75,61,"Stop Pin · 3","FRAME","32:2543","Misclick",11,8,"72.73%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","20:601 > 32:2497 > 20:1362 > 1:1126","20:601 > 32:2497 > 20:1362 > 1:1126","32:2497","32:2497",23.5,47.83,"FALSE","TRUE","FALSE",63,47,"Vector","VECTOR","32:2521","Misclick",11,8,"72.73%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","20:601 > 32:2497 > 20:1362 > 1:1126","20:601 > 32:2497 > 20:1362 > 1:1126","32:2497","32:2497",23.5,47.83,"FALSE","TRUE","FALSE",32,95,"F4C · Nearby / Map view — en-GB","FRAME","32:2497","Click",11,8,"72.73%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","20:601 > 32:2497 > 20:1362 > 1:1126","20:601 > 32:2497 > 20:1362 > 1:1126","20:1362","20:1362",1.4,47.83,"FALSE","TRUE","FALSE",80,45,"Content","FRAME","20:1363","Click",11,8,"72.73%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","20:601 > 32:2497 > 20:1362 > 1:1126","20:601 > 32:2497 > 20:1362 > 1:1126","1:1126","1:1126",0,47.83,"FALSE","TRUE","FALSE",,,,,,,11,8,"72.73%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607067413","2026-11-05 12:34:53","2026-11-05 12:53:07",1094.1,,"Mac OS","Apple","Macintosh","WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:601","20:601",26.1,38.74,"TRUE","FALSE","FALSE",42,14,"Content","FRAME","20:602","Click",6,4,"66.67%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607067413","2026-11-05 12:34:53","2026-11-05 12:53:07",1094.1,,"Mac OS","Apple","Macintosh","WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",12.6,38.74,"TRUE","FALSE","FALSE",44,22,"My location • Hung Hom","TEXT","20:1376","Misclick",6,4,"66.67%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607067413","2026-11-05 12:34:53","2026-11-05 12:53:07",1094.1,,"Mac OS","Apple","Macintosh","WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",12.6,38.74,"TRUE","FALSE","FALSE",34,29,"Argyle Centre","TEXT","20:1383","Misclick",6,4,"66.67%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607067413","2026-11-05 12:34:53","2026-11-05 12:53:07",1094.1,,"Mac OS","Apple","Macintosh","WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",12.6,38.74,"TRUE","FALSE","FALSE",45,22,"My location • Hung Hom","TEXT","20:1376","Misclick",6,4,"66.67%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607067413","2026-11-05 12:34:53","2026-11-05 12:53:07",1094.1,,"Mac OS","Apple","Macintosh","WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",12.6,38.74,"TRUE","FALSE","FALSE",37,29,"Argyle Centre","TEXT","20:1383","Misclick",6,4,"66.67%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607067413","2026-11-05 12:34:53","2026-11-05 12:53:07",1094.1,,"Mac OS","Apple","Macintosh","WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",12.6,38.74,"TRUE","FALSE","FALSE",52,78,"Content","FRAME","20:1363","Click",6,4,"66.67%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607067413","2026-11-05 12:34:53","2026-11-05 12:53:07",1094.1,,"Mac OS","Apple","Macintosh","WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","1:1126","1:1126",0,38.74,"TRUE","FALSE","FALSE",,,,,,,6,4,"66.67%",1
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:601","20:601",21.8,26.75,"TRUE","FALSE","FALSE",78,40,"Stack · 8","FRAME","20:641","Misclick",7,5,"71.43%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:601","20:601",21.8,26.75,"TRUE","FALSE","FALSE",78,40,"Stack · 8","FRAME","20:641","Misclick",7,5,"71.43%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:601","20:601",21.8,26.75,"TRUE","FALSE","FALSE",77,12,"Content","FRAME","20:602","Click",7,5,"71.43%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",5,26.75,"TRUE","FALSE","FALSE",47,28,"Input · Argyle Centre","FRAME","20:1382","Misclick",7,5,"71.43%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",5,26.75,"TRUE","FALSE","FALSE",32,29,"Argyle Centre","TEXT","20:1383","Misclick",7,5,"71.43%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",5,26.75,"TRUE","FALSE","FALSE",72,33,"Trip Form","FRAME","20:1369","Misclick",7,5,"71.43%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","20:1362","20:1362",5,26.75,"TRUE","FALSE","FALSE",19,78,"Content","FRAME","20:1363","Click",7,5,"71.43%",2
+"601915417","b31cfa95-9970-4a6d-81b3-d8e9ed8d8ba5","mission","From Hung Hom Station to Argyle Centre","You are right now at Hung Hom Station, and you have no idea how to get to Argyle Centre.
+
+Please search the recommended route from Hung Hom Station to Argyle Centre.","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","20:601 > 20:1362 > 1:1126","20:601 > 20:1362 > 1:1126","1:1126","1:1126",0,26.75,"TRUE","FALSE","FALSE",,,,,,,7,5,"71.43%",2

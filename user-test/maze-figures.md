@@ -457,6 +457,11 @@ Notation: `A → B ×n` = n participants moved from screen A to screen B. Screen
 | 15 · Find landmarks | F4 → F4B: **8** | F4 → F4B ×8; F4 → F4C ×1 | The failure went Map → route expanded → Trip → Nearby → Map, then dropped off. | — |
 | 18 · Adjust text size | F1 → F5 → S2A → S2B → F1: **6** | **F1 → F5 (More) ×7**; F1 → F4C ×1; F1 → F1B ×1 | One opened More, left for Nearby and Saved, then came back to More and finished. One tapped Map view first, returned and went to More. One opened Saved first, then More. All 9 succeeded. | — |
 
+Checked against the per-participant CSV export (8 Nov; see [participants.md](participants.md)). Every path above agrees with it. Three details are sharper in the CSV:
+- Block 6: the failure's path has 9 screens. The online report's "10 steps" appears to count the drop-off as a step.
+- Block 12: "5 misclicked" on the Nearby list means 5 misclicks, made by 4 of the 6 participants who reached it.
+- Block 18: the expected path ends on "F1 · Home / 200% text", not the default Home.
+
 Points worth noting from these paths:
 - **[derived]** In block 6, half of the participants who reached the route screen did so through the Saved list rather than the Home card, and three of the four who left Home first went to Trip, Nearby or the map.
 - **[derived]** In blocks 12 and 14, three "indirect" successes took a *shorter* designed route than the expected path (route 101 from Home's Nearby section; Home's Map view link). Maze counts any route other than the single expected path as indirect, so the expected-path rates understate how efficiently participants found these screens.
