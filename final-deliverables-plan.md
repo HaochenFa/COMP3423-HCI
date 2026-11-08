@@ -72,7 +72,20 @@ Page budget: cover 1 + 18.5 body, leaving about half a page spare.
 | — | References | — | Lead | 12–16 refs, APA 7 | — | Markers spot-check 2–3 |
 | — | Appendices | — | Researcher + Accessibility | A. Maze report pages + per-participant export; B. task script (verbatim in maze-figures.md §3); C. Figma and Maze links; D. accessibility audit of the original app; E. extra screens | — | Raw data, task script, Figma URL; accessibility audit (bonus 2%) |
 
-**Iteration evidence (5.4), with the design frozen.** The rubric item reads "prototype visibly changed in response to test findings (3)". With no post-test changes, the honest options are: show the dated pre-test iterations (hand sketch → digital wireframe → 14 hi-fi screens at the checkpoint → 28 Oct visual clean-up → 29 Oct split into zh-HK and en-GB pages and resize to 402 × 874 → later interaction and accessibility variables), using Figma version history; and present the §2 accepted points as proposed changes in Future Work. Markers may still score this item 0, because those iterations did not respond to test findings.
+**Iteration evidence (5.4), with the design frozen.** The rubric item reads "prototype visibly changed in response to test findings (3)". The dated timeline from Figma version history is in [report/05-4-design-iteration.md](report/05-4-design-iteration.md). In short:
+- 28 Oct: 13 screens (v1).
+- 28 Oct: 28 screens in two languages, prototype links and the comparison boards.
+- 29–30 Oct: split into zh-HK and en-GB pages, the 150% / 200% / high-contrast states, resize to 402 × 874 and the official icon.
+- 2 Nov: variable collections for text size, contrast, language and state, plus 111 dialog and flow frames.
+- 3 Nov: 200% acceptance-check frames.
+- 5 Nov: arrival rows re-laid out on 15 + 14 screens. This was the last save before the test.
+
+Present the §2 accepted points as proposed changes in Future Work. Markers may still score this item 0, because no change responded to the Maze test. The pre-test iteration ran in three owned passes:
+- Haochen Fa improved and extended Li-En Lo's v1 (28–30 Oct).
+- Xulu Zhang built the interactive prototype (2 Nov).
+- Moling Kong reviewed accessibility (3–5 Nov).
+
+The accessibility pass (a 200% check, then arrival-row changes) is the closest thing to iteration after findings, from our own expert review rather than user testing.
 
 **Limitations to state (6).** n = 9; tested in English only, while one target group is older Cantonese speakers; participant profile not yet documented (see §6); the en-GB test page had fewer working interactions than the full design, which inflates misclicks and caused one failure; Maze's task panel blocked a target once; one comprehension question was ambiguously worded; no screen-reader testing; at 200% some secondary text on the More screen overlaps (found in our own audit); no re-test.
 
@@ -114,7 +127,10 @@ Production notes: demo the zh-HK prototype (more complete than the tested en-GB 
 6. **Xulu Zhang's SID** for the cover page.
 7. **References:** none written up yet; see §7.
 8. **Site map diagram:** not yet drawn.
-9. **Iteration evidence:** name the Figma versions with dates, and say whether any change was ever made after a pilot or early feedback (that would count).
+9. **Iteration evidence:** the timeline is done ([report/05-4-design-iteration.md](report/05-4-design-iteration.md)). Still open:
+   - Before the report gives a specific reason for the 5 Nov arrival-row changes, confirm it with Moling.
+   - Ask whether any change was made after a pilot or informal feedback (that would count).
+   - Export the dated Home F1 strip from version history.
 
 **Design QA notes (found 8 Nov while auditing the frozen file; the team decides whether these count as bug fixes or go into limitations):**
 - On S5, S6 and S7 (zh-HK) the 繁 language button label is white on a white pill, so it is invisible.
