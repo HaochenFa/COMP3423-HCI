@@ -128,7 +128,7 @@ Production notes: demo the zh-HK prototype (more complete than the tested en-GB 
 2. **Per-participant raw export from Maze** (CSV with timestamps): markers check "timestamps, per-participant, per-task metrics", which neither the PDF nor the shared online report contains (the online report shows aggregated paths only). Export it from the Maze project's Results page before the plan or trial expires. *Chenyang (asked 8 Nov).*
 3. **Task script:** done; verbatim wording of all 21 blocks is in [user-test/maze-figures.md](user-test/maze-figures.md) §3.
 4. **Accessibility audit of the original app** (bonus 2%: "documented accessibility audit of the existing app (e.g. WCAG basics: contrast, touch target size, text scaling, screen-reader compatibility)"). Owner: Moling. **Mostly done (8 Nov):** [report/appendix-d-accessibility-audit.md](report/appendix-d-accessibility-audit.md) has the method, a 10-row results table, Figure D.1 ([report/figures/audit/appendix-d-contrast-targets.png](report/figures/audit/appendix-d-contrast-targets.png)), a per-screen table of what the app exposes to screen readers, about 60 words for §2 or §4, and how the redesign answers each finding. Results:
-   - Contrast: main text passes. Search placeholder 1.38:1, Nearby mode buttons 1.92:1 and the slate bars 4.37:1 fail.
+   - Contrast: main text passes. Search placeholder 1.38:1, Nearby mode buttons 1.92:1 and the slate bars 4.37:1 fail. All three are confirmed on an iPhone (v2.3.39, 8 Nov), which also shows the Nearby empty-state message at 1.66:1.
    - Targets: stop icons 26 pt (meet 24 pt, under 44 pt); the planner star fails WCAG 2.5.8.
    - Text: no text-size setting in the app; text already cut off at the default size.
    - Screen reader: tabs, the More menu and the language options are labelled. Route rows, stop lists, keypads and all icon-only buttons are not exposed (provisional).
@@ -138,7 +138,11 @@ Production notes: demo the zh-HK prototype (more complete than the tested en-GB 
    - Format: 2480 px wide at 400 dpi (15.7 cm in Word). Numbered red callouts with an English legend.
    - Screenshot pixels unchanged: only the Mac window frame was cropped off.
    - Every callout was checked against the screenshot, and the 04 draft's figure captions now match.
-   - Draft claims the screenshots did not support were softened: "advert on launch", "a daytime search", "changes the boarding and alighting stops", "no text-size option anywhere". Restore any of them only with a capture that shows it.
+   - Draft claims the screenshots did not support were softened: "a daytime search", "changes the boarding and alighting stops", "no text-size option anywhere". Restore any of them only with a capture that shows it.
+   - "Advert on launch" is back in the drafts, now backed by a phone capture taken right after opening the app: `t1-launch-fullscreen-ad.png`, added 8 Nov as the left panel of F1.
+   - F5 now uses the iPhone capture of the More menu (v2.3.39). It shows 26 icons; the Mac capture had cut off the last row, so the drafts now say 26.
+   - Six iPhone captures of v2.3.39 (8 Nov, `*-iphone-*.png`) add two points to the drafts: a banner advert on every main tab, and an empty 收藏 with no hint of how to save.
+   - Their Home and Nearby show "no stops nearby" and carry Japanese-language ads, which suggests the phone was outside Hong Kong. Use them for these points only, not as a typical Home.
    - `make_figs.py` re-renders the figures.
 6. **Xulu Zhang's SID** for the cover page. *Haochen will fill it in.*
 7. **References:** done. [report/references.md](report/references.md) has:

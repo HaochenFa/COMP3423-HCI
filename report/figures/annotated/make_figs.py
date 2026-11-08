@@ -65,8 +65,14 @@ def f1(outdir):
     ads = Panel(f"{SRC}/cropped/moling-ads-interstitial.jpeg", (0, 0, 1269, 920),
                 "cropped/moling-ads-interstitial.jpeg  (three phone captures)")
     games = png("t7-games-tab.png")
+    # phone capture; drop the black bars above and below the advert (rows 0-141, 1858-1999)
+    launch = Panel(f"{SRC}/t1-launch-fullscreen-ad.png", (0, 142, 920, 1858),
+                   "t1-launch-fullscreen-ad.png")
 
-    def ann(f, a, g):
+    def ann(f, l, a, g):
+        # 1 full-screen advert on opening the app; the only exit is the small skip button
+        f.ring(l, 865, 197, 40)
+        f.marker(l, 1, (745, 197), to=[(825, 197)])
         # 1 full-screen interstitial advert (centre capture)
         f.box(a, 426, 67, 844, 854)
         f.marker(a, 1, (454, 34))
@@ -91,14 +97,14 @@ def f1(outdir):
         f.marker(g, 6, (429, 963))
 
     entries = [
-        (1, "Full-screen bank advert covering the whole app (interstitial)"),
+        (1, "Full-screen adverts: one as soon as the app opens, whose only exit is a small skip button (ringed); a bank advert (centre)"),
         (2, "Rotating quiz and promotion banner above the routes"),
         (3, "Floating 'Where to?' button (想去哪里) covers arrival times"),
         (4, "Banner advert inside the route list"),
         (5, "Arrival minutes with no Live / Scheduled label"),
         (6, "Games tab (游戏 / 遊戲) takes a slot in the main navigation"),
     ]
-    build(f"{outdir}/F1-home-annotated.png", [ads, games], [110], ann, entries,
+    build(f"{outdir}/F1-home-annotated.png", [launch, ads, games], [60, 110], ann, entries,
           ml=50, mr=50, ncol=2)
 
 
@@ -229,35 +235,39 @@ def f4(outdir):
 
 # ---------------------------------------------------------------- F5 More
 def f5(outdir):
-    p1 = png("t6-menu-grid.png")
+    # iPhone capture, v2.3.39: the whole 26-item menu fits on screen
+    p1 = Panel(f"{SRC}/t6-menu-grid-iphone-26-items.png", (0, 0, 920, 2000),
+               "t6-menu-grid-iphone-26-items.png")
     p2 = png("t7-language-no-cancel.png")
 
     def ann(f, a, b):
-        # 1 the 24-icon grid
-        f.box(a, 28, 374, 550, 1007)
-        f.marker(a, 1, (548, 378))
+        # 1 the 26-item grid
+        f.box(a, 58, 572, 862, 1748)
+        f.marker(a, 1, (858, 578))
         # 2 promotions / social media mixed in with service tools
-        f.box(a, 168, 380, 272, 484)
-        f.marker(a, 2, (288, 388))
-        f.box(a, 168, 827, 272, 928)
-        f.marker(a, 2, (288, 834))
-        f.box(a, 433, 827, 537, 928)
-        f.marker(a, 2, (418, 834))
-        f.box(a, 186, 936, 254, 1000)
-        f.marker(a, 2, (275, 966))
+        f.box(a, 279, 582, 429, 735)
+        f.marker(a, 2, (452, 600))
+        f.box(a, 279, 1250, 429, 1402)
+        f.marker(a, 2, (452, 1268))
+        f.box(a, 703, 1250, 853, 1402)
+        f.marker(a, 2, (680, 1268))
+        f.box(a, 279, 1417, 429, 1569)
+        f.marker(a, 2, (452, 1435))
         # 3 no text-size option: bracket on the outer side of the whole menu
-        x, y = f.bracket(a, "L", 374, 1007, 22)
+        x, y = f.bracket(a, "L", 572, 1748, 22)
         f.disc(x - MR + 4, y, 3)
         # 4 language pop-up, no cancel
         f.box(b, 21, 367, 552, 705)
         f.marker(b, 4, (36, 370))
 
     entries = [
-        (1, "24 icons in one unsorted grid"),
+        (1, "26 icons in one unsorted grid"),
         (2, "Promotions and social media (pet bus 寵物巴士, online shopping 網上購物, Facebook, AD HERE) mixed in with service tools"),
         (3, "No text-size or display setting among them"),
         (4, "Language pop-up (請選擇語言) with no Cancel button"),
     ]
+    entries[1] = (2, "Promotions and social media (pet bus 寵物巴士, online shopping 網上購物, "
+                     "Facebook, advertising enquiries 廣告查詢) mixed in with service tools")
     build(f"{outdir}/F5-more-annotated.png", [p1, p2], [80], ann, entries,
           ml=96, mr=50, legend="right", legend_w=960, legend_gap=90, max_scale=1.0)
 

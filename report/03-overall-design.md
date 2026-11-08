@@ -24,7 +24,7 @@ Figure 3.1 shows the dual-track journey map. In both tracks the lowest emotional
 
 | Journey stage | Main pain point (existing app) | Addressed by |
 |---|---|---|
-| Opening the app | A full-screen advert can cover the app; saved routes buried | F1 Home |
+| Opening the app | Full-screen advert on launch with only a small skip button; saved routes buried | F1 Home |
 | Searching | Search only accepts route numbers; origin can show "null"; the AI suggestion changes the boarding stop; nearby search wants a stop code | F3 Trip planning, F4 Nearby |
 | Reading and waiting | No way to enlarge text; a floating button covers arrival times; on Home, live and scheduled times look the same | F1 Home, F2 Route detail, F5 Accessibility |
 | Saving for next time | Saving a stop takes seven taps behind an unlabelled ≡ icon | F2 One-tap save |
@@ -35,7 +35,7 @@ Figure 3.1 shows the dual-track journey map. In both tracks the lowest emotional
 
 ## 3.3 Information architecture
 
-The existing app spreads its functions across a bottom bar of six items (Home, Favourites, Search, Nearby, **Games**, and a grid button that opens 24 unsorted icons). We reduced this to five labelled tabs, each mapped to one user goal (Figure 3.2):
+The existing app spreads its functions across a bottom bar of six items (Home, Favourites, Search, Nearby, **Games**, and a grid button that opens 26 unsorted icons). We reduced this to five labelled tabs, each mapped to one user goal (Figure 3.2):
 
 | Tab | 主頁 Home | 行程 Trip | 附近 Nearby | 收藏 Saved | 更多 More |
 |---|---|---|---|---|---|
@@ -81,7 +81,7 @@ Table 3.2 lists the decisions that apply across the whole app and the principle 
 | Saved routes and next arrivals are the first content on Home; no launch advert | F1 | Flexibility and efficiency of use (Nielsen, 1994, H7); intrusive ads raise irritation and avoidance (Edwards et al., 2002) |
 | Every arrival carries a text label, **實時** Live or **預定** Scheduled, as well as a colour | F1, F2, F4, F3A | Visibility of system status (H1); colour is never the only cue (WCAG 1.4.1) |
 | A status line shows the last update; offline and disruption states say what is wrong and what to do | F1, S5, S6, S7 | Visibility of system status (H1); real-time information builds trust only when its reliability is clear (Ferris et al., 2010; Watkins et al., 2011) |
-| Five labelled tabs instead of six items plus a grid of 24 icons; settings grouped into three headed sections | Tab bar, F5 | Hick's law (Hick, 1952); recognition rather than recall (H6) |
+| Five labelled tabs instead of six items plus a grid of 26 icons; settings grouped into three headed sections | Tab bar, F5 | Hick's law (Hick, 1952); recognition rather than recall (H6) |
 | Primary actions are large, full-width buttons; ☆ and row targets are at least 44 pt; navigation sits in the bottom tab bar within thumb reach | All | Fitts' law (Fitts, 1954); one-handed thumb use (Parhi et al., 2006); Apple's recommended 44 × 44 pt control size (Apple, n.d.) |
 | Search by place name, with the origin preset to the current location | F3, S4 | Match between system and the real world (H2); recognition rather than recall (H6); error prevention (H5) |
 | Undo instead of confirmation dialogs for save and remove; confirmation only for "remove all" | F2A, Saved | User control and freedom (H3); permit easy reversal of actions (Shneiderman et al., 2016) |
