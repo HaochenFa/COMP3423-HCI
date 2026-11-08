@@ -1,6 +1,6 @@
 # Appendix D. Accessibility audit of the existing app (working draft)
 
-**Status:** contrast, target size and part of the screen-reader check are done (8 Nov 2026). Two checks still need a real iPhone, 20 minutes in all: the system text-size test (check 9) and the VoiceOver walk-through that confirms check 10. Steps are at the end. Owner: Accessibility & Evaluation Lead (Moling Kong).
+**Status:** contrast, target size and text scaling are done (8 Nov 2026), text scaling on an iPhone. One check still needs the phone, about 10 minutes: the VoiceOver walk-through that confirms check 10. Steps are at the end. Owner: Accessibility & Evaluation Lead (Moling Kong).
 
 **App audited:** App1933 v2.3.38 (KMB · LWB), the iPhone app, run on a Mac with Apple silicon at the size of a 375 × 667 pt iPhone screen. Interface language 繁體中文.
 
@@ -27,10 +27,12 @@
 | 6 | Unused letters on the stop-code keypad (B, D, G, I …) | 1.4.3 | **Exempt.** 1.35:1, but they are disabled keys, which WCAG exempts. | `t5-nearby-stop-code-entry.png` |
 | 7 | Icons against their background | 1.4.11 (3:1) | **Pass.** Tab icons 13.0:1; stop action icons (slate circles on white) 4.37:1; favourite star 6.8:1. | Figure D.1, panels 5–6 |
 | 8 | Touch-target size | 2.5.8 (24 pt); Apple 44 pt | **Mixed.** Large enough: tab bar 59 × 62 pt, More button 48 × 48, More grid cells 86 × 61, search keypad keys 70 × 51 and 46 pt circles, stop-code keys 44 × 39, Nearby mode buttons 88 × 46. Meet 24 pt but are under 44 pt: route header icons (timetable, notices, swap) 29 pt; the four stop action icons 26 pt across with centres 33 pt apart; language options 300 × 39; back button 43 × 46. **Fail 2.5.8:** the favourite star in planner results (a box about 17 pt wide) sits inside the result row, which is itself a target, so the spacing exception cannot apply. The planner field's clear button is about 20 pt and sits inside the field; if it is the iOS system clear button, WCAG's user-agent exception covers it. The Saved edit pencil is a 15 pt glyph; its tap area is not exposed, so it could not be measured. The skip button on the full-screen advert shown at launch is 53 px wide on a 920 px phone capture: 6% of the screen width, roughly 22–25 pt on a phone 375–430 pt wide. That is about the 24 pt minimum and well under 44 pt, and it is the only way past the advert. | Figure D.1, panels 5–6; `t1-launch-fullscreen-ad.png` |
-| 9 | Text scaling | 1.4.4 | **Fail (in-app); system setting not yet tested.** The More menu has 26 items (九巴會員 … 使用條款; all visible in the iPhone capture of v2.3.39), and none of them changes text size. At the default size, text is already cut off in four places: Home row 中環 (港澳碼頭) -…, route title 8 往 九龍站,高鐵站 (YT…, planner stop 16. HH600) 紅隧轉車 (cut mid-word with no ellipsis) and 暫時沒有預定班次 (. Larger text can only make this worse. Whether the app follows the iPhone's Larger Text setting must be checked on a phone. | `t1-home-no-location.png`, `t2-stop-expanded-unlabelled-icons.png`, `t4-planner-N368-no-service-clipped.png`, `t6-menu-grid-iphone-26-items.png` |
+| 9 | Text scaling | 1.4.4 | **Fail.** *System setting:* the app ignores the iPhone's text size. With Larger Accessibility Sizes on and the slider at its maximum (v2.3.39, 8 Nov, 21:32), Home text is exactly the size it was at 21:23: APP 1933 218 × 32 px, 附近沒有車站 186 × 29 px, tab label 收藏 50 × 24 px in both captures (Figure D.2). *In the app:* the More menu has 26 items (九巴會員 … 使用條款; all visible in the iPhone capture of v2.3.39), and none of them changes text size. At the default size, text is already cut off in four places: Home row 中環 (港澳碼頭) -…, route title 8 往 九龍站,高鐵站 (YT…, planner stop 16. HH600) 紅隧轉車 (cut mid-word with no ellipsis) and 暫時沒有預定班次 (. Larger text would make this worse. A passenger who needs bigger text has no way to get it in App1933. | Figure D.2; `t8-a11y-ios-larger-text-max-setting.png`, `t8-a11y-home-at-max-text-size.png`, `t1-home-no-location.png`, `t2-stop-expanded-unlabelled-icons.png`, `t4-planner-N368-no-service-clipped.png`, `t6-menu-grid-iphone-26-items.png` |
 | 10 | Screen-reader names and roles | 1.1.1, 4.1.2 | **Fail (provisional).** *Exposed with useful names:* the six tab buttons (主頁, 收藏, 搜尋, 鄰近, 遊戲, 其他頁面目錄); all 26 items in the More menu; the three language options; the route back button; stop markers on the route map. *Not exposed at all:* on Home, the route rows, the advert banner, the location prompt, the weather and fare buttons, and the 想去邊度 trip-planner button; on route detail, the timetable, notice and swap icons and the whole stop list, including the four stop action icons; on Saved, the saved stop and its arrival time, and the edit button; on Search, the keypad and the result list; on Nearby, the stop-code keypad and the three mode buttons. *Wrong role:* the More menu's 關閉 (Close) is exposed as plain text, not as a button; the search box is exposed as static text, not as a text field. *Language:* the back button is named "Go back" in English while the interface is in Chinese (3.1.2 Language of Parts). | Table D.2 |
 
 > **Figure D.1** Contrast failures and small targets in App1933 v2.3.38. File: [figures/audit/appendix-d-contrast-targets.png](figures/audit/appendix-d-contrast-targets.png). Red boxes are contrast failures, green is a pass, blue marks measured targets.
+
+> **Figure D.2** App1933 ignores the iPhone's text size. (a) Home before the change; (b) iOS Larger Text with Larger Accessibility Sizes on and the slider at maximum; (c) Home at that setting, with every measured text box the same size as in (a). File: [figures/audit/appendix-d-text-scaling.png](figures/audit/appendix-d-text-scaling.png).
 
 **Table D.2 (for the appendix): what each main screen exposes.**
 
@@ -46,29 +48,25 @@
 
 **Why check 10 is provisional.** The app is built with React Native, which passes accessibility information to iOS. We read that information on a Mac. If VoiceOver on an iPhone reads more than the Mac shows, for example by reading the text inside a route row, the "not exposed" list will shrink. The icon-only controls (stop actions, header icons, edit) have no text inside them to fall back on, so they are the most likely to stay unlabelled. Confirm on a phone before the report says "fail" without qualification.
 
-## Phone steps still to do (about 20 minutes, iPhone with App1933 installed)
+## Phone steps
 
-1. **Text size (check 9).**
-   - Settings → Accessibility → Display & Text Size → Larger Text: turn on Larger Accessibility Sizes and drag the slider to the largest size.
-   - Open App1933 and screenshot Home, a route detail with a stop expanded, and Saved.
-   - Record whether the text grew, stayed the same, or was cut off.
-   - Reset the slider afterwards.
-2. **VoiceOver (check 10).**
+1. **Text size (check 9): done 8 Nov.** The app did not change (Figure D.2). Optional: repeat once after force-quitting and reopening the app, to rule out a screen that had not refreshed.
+2. **VoiceOver (check 10): still to do, about 10 minutes.**
    - Settings → Accessibility → VoiceOver → on.
    - Start a screen recording with the microphone on, so the announcements are captured.
    - Do three tasks:
      - from Home, open route 1 and hear the next arrival;
      - save a stop;
      - search for route 116 with the keypad.
-   - On each screen, swipe right through every element and write down what is announced. Note especially the four stop icons, the header icons and the 想去邊度 button.
+   - On each screen, swipe right through every element and write down what is announced. Note especially the four stop icons, the header icons and the floating 智能問路 button (想去邊度 in v2.3.38).
    - Turn VoiceOver off.
-3. Put the screenshots in `original-app-screenshots/` as `t8-a11y-<what>.png`, and update rows 9 and 10 above.
+3. Put the recording or screenshots in `original-app-screenshots/` as `t8-a11y-<what>`, and update row 10 above.
 
 ## Lines for the report (§2 or §4, about 60 words)
 
-> We audited App1933 v2.3.38 against four WCAG basics and repeated the contrast checks on an iPhone running v2.3.39 (Appendix D). Main text passes contrast, but the search placeholder (1.4:1), the Nearby mode buttons (1.9:1) and empty-state message (1.7:1), and the slate section bars (4.4:1) fail WCAG 1.4.3. The four stop icons are 26 pt, below the 44 pt guideline, and the planner's star fails WCAG 2.5.8. There is no text-size setting, text is already cut off at the default size, and most of the app's content and icon buttons are not exposed to screen readers.
+> We audited App1933 v2.3.38 against four WCAG basics and repeated the contrast checks on an iPhone running v2.3.39 (Appendix D). Main text passes contrast, but the search placeholder (1.4:1), the Nearby mode buttons (1.9:1) and empty-state message (1.7:1), and the slate section bars (4.4:1) fail WCAG 1.4.3. The four stop icons are 26 pt, below the 44 pt guideline, and the planner's star fails WCAG 2.5.8. The app has no text-size setting and ignores the iPhone's own text size even at its maximum. Most of the app's content and icon buttons are not exposed to screen readers.
 
-Adjust the last sentence once the phone checks are done.
+Adjust the last sentence once the VoiceOver check is done.
 
 ## How the redesign answers each finding
 

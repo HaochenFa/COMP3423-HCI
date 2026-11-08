@@ -25,7 +25,7 @@ Figure 3.1 shows the dual-track journey map. In both tracks the lowest emotional
 | Journey stage | Main pain point (existing app) | Addressed by |
 |---|---|---|
 | Opening the app | Full-screen advert on launch with only a small skip button; saved routes buried | F1 Home |
-| Searching | Search only accepts route numbers; origin can show "null"; the AI suggestion changes the boarding stop; nearby search wants a stop code | F3 Trip planning, F4 Nearby |
+| Searching | Search only accepts route numbers; origin can show "null"; picking a place takes region → district → area → map; the AI suggestion changes the boarding stop; nearby search wants a stop code | F3 Trip planning, F4 Nearby |
 | Reading and waiting | No way to enlarge text; a floating button covers arrival times; on Home, live and scheduled times look the same | F1 Home, F2 Route detail, F5 Accessibility |
 | Saving for next time | Saving a stop takes seven taps behind an unlabelled ≡ icon | F2 One-tap save |
 

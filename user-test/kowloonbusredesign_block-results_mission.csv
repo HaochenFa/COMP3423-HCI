@@ -1,0 +1,431 @@
+"Maze ID","Block ID","Block type","Block title","Block description","Tester ID","Started at","Completed at","Study duration (seconds)","Device type","OS","Vendor","Model","Browser","Browser version","Language","Source","Reach email","Fbclid","Mission type","Path","Path (screen names)","Screen ID","Screen name","Screen duration (seconds)","Total duration (seconds)","Direct success","Indirect success","Give up","x","y","Clicked element name","Clicked element type","Clicked element ID","Click type","Total click count","Total misclick count","Misclick rate","Total misclick page count"
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607192590","2026-11-07 11:29:38","2026-11-07 11:36:47",429.3,"mobile","iOS","Apple","iPhone","Instagram","453.0.0.39.58","en-GB","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",19.5,25.6,"TRUE","FALSE","FALSE",21,69,"繁體中文","TEXT","26:1446","Misclick",5,3,"60.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607192590","2026-11-07 11:29:38","2026-11-07 11:36:47",429.3,"mobile","iOS","Apple","iPhone","Instagram","453.0.0.39.58","en-GB","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",19.5,25.6,"TRUE","FALSE","FALSE",25,69,"Segment · 繁體中文","FRAME","26:1445","Misclick",5,3,"60.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607192590","2026-11-07 11:29:38","2026-11-07 11:36:47",429.3,"mobile","iOS","Apple","iPhone","Instagram","453.0.0.39.58","en-GB","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",19.5,25.6,"TRUE","FALSE","FALSE",23,71,"繁體中文","TEXT","26:1446","Misclick",5,3,"60.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607192590","2026-11-07 11:29:38","2026-11-07 11:36:47",429.3,"mobile","iOS","Apple","iPhone","Instagram","453.0.0.39.58","en-GB","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",19.5,25.6,"TRUE","FALSE","FALSE",76,88,"Content","FRAME","26:1388","Click",5,3,"60.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607192590","2026-11-07 11:29:38","2026-11-07 11:36:47",429.3,"mobile","iOS","Apple","iPhone","Instagram","453.0.0.39.58","en-GB","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1458","26:1458",4.1,25.6,"TRUE","FALSE","FALSE",76,84,"Content","FRAME","26:1459","Click",5,3,"60.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607192590","2026-11-07 11:29:38","2026-11-07 11:36:47",429.3,"mobile","iOS","Apple","iPhone","Instagram","453.0.0.39.58","en-GB","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","28:2159","28:2159",2,25.6,"TRUE","FALSE","FALSE",,,,,,,5,3,"60.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607192590","2026-11-07 11:29:38","2026-11-07 11:36:47",429.3,"mobile","iOS","Apple","iPhone","Instagram","453.0.0.39.58","en-GB","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","20:601","20:601",0,25.6,"TRUE","FALSE","FALSE",,,,,,,5,3,"60.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","608092742","2026-11-07 05:24:58","2026-11-07 05:31:41",403.3,"tablet","Mac OS","Apple","iPad","Safari","27.3","zh-TW","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",22.1,30.19,"TRUE","FALSE","FALSE",77,89,"Content","FRAME","26:1388","Click",2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","608092742","2026-11-07 05:24:58","2026-11-07 05:31:41",403.3,"tablet","Mac OS","Apple","iPad","Safari","27.3","zh-TW","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1458","26:1458",6.2,30.19,"TRUE","FALSE","FALSE",83,84,"Content","FRAME","26:1459","Click",2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","608092742","2026-11-07 05:24:58","2026-11-07 05:31:41",403.3,"tablet","Mac OS","Apple","iPad","Safari","27.3","zh-TW","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","28:2159","28:2159",1.8,30.19,"TRUE","FALSE","FALSE",,,,,,,2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","608092742","2026-11-07 05:24:58","2026-11-07 05:31:41",403.3,"tablet","Mac OS","Apple","iPad","Safari","27.3","zh-TW","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","20:601","20:601",0,30.19,"TRUE","FALSE","FALSE",,,,,,,2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","608091492","2026-11-07 05:19:25","2026-11-07 05:41:48",1343.4,,"Windows",,,"WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",4.6,10.48,"TRUE","FALSE","FALSE",42,89,"Content","FRAME","26:1388","Click",2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","608091492","2026-11-07 05:19:25","2026-11-07 05:41:48",1343.4,,"Windows",,,"WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1458","26:1458",4.1,10.48,"TRUE","FALSE","FALSE",41,83,"Content","FRAME","26:1459","Click",2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","608091492","2026-11-07 05:19:25","2026-11-07 05:41:48",1343.4,,"Windows",,,"WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","28:2159","28:2159",1.7,10.48,"TRUE","FALSE","FALSE",,,,,,,2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","608091492","2026-11-07 05:19:25","2026-11-07 05:41:48",1343.4,,"Windows",,,"WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","20:601","20:601",0,10.48,"TRUE","FALSE","FALSE",,,,,,,2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607587743","2026-11-06 11:43:56","2026-11-06 11:51:34",457.6,,"Windows",,,"Chrome","155.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",30.4,45.32,"TRUE","FALSE","FALSE",68,89,"Content","FRAME","26:1388","Click",2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607587743","2026-11-06 11:43:56","2026-11-06 11:51:34",457.6,,"Windows",,,"Chrome","155.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1458","26:1458",13.1,45.32,"TRUE","FALSE","FALSE",81,83,"Content","FRAME","26:1459","Click",2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607587743","2026-11-06 11:43:56","2026-11-06 11:51:34",457.6,,"Windows",,,"Chrome","155.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","28:2159","28:2159",1.8,45.32,"TRUE","FALSE","FALSE",,,,,,,2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607587743","2026-11-06 11:43:56","2026-11-06 11:51:34",457.6,,"Windows",,,"Chrome","155.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","20:601","20:601",0,45.32,"TRUE","FALSE","FALSE",,,,,,,2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607462892","2026-11-06 03:21:35","2026-11-06 03:28:27",412.7,,"Windows",,,"Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",8.3,45.91,"TRUE","FALSE","FALSE",50,69,"简体中文","TEXT","385:2380","Misclick",6,4,"66.67%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607462892","2026-11-06 03:21:35","2026-11-06 03:28:27",412.7,,"Windows",,,"Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",8.3,45.91,"TRUE","FALSE","FALSE",23,70,"繁體中文","TEXT","26:1446","Misclick",6,4,"66.67%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607462892","2026-11-06 03:21:35","2026-11-06 03:28:27",412.7,,"Windows",,,"Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",8.3,45.91,"TRUE","FALSE","FALSE",37,57,"Text · No pop-up ads","FRAME","26:1438","Misclick",6,4,"66.67%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607462892","2026-11-06 03:21:35","2026-11-06 03:28:27",412.7,,"Windows",,,"Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",8.3,45.91,"TRUE","FALSE","FALSE",87,69,"Segment · English","FRAME","26:1447","Misclick",6,4,"66.67%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607462892","2026-11-06 03:21:35","2026-11-06 03:28:27",412.7,,"Windows",,,"Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",8.3,45.91,"TRUE","FALSE","FALSE",55,90,"Content","FRAME","26:1388","Click",6,4,"66.67%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607462892","2026-11-06 03:21:35","2026-11-06 03:28:27",412.7,,"Windows",,,"Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1458","26:1458",35.9,45.91,"TRUE","FALSE","FALSE",60,84,"Content","FRAME","26:1459","Click",6,4,"66.67%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607462892","2026-11-06 03:21:35","2026-11-06 03:28:27",412.7,,"Windows",,,"Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","28:2159","28:2159",1.7,45.91,"TRUE","FALSE","FALSE",,,,,,,6,4,"66.67%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607462892","2026-11-06 03:21:35","2026-11-06 03:28:27",412.7,,"Windows",,,"Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","20:601","20:601",0,45.91,"TRUE","FALSE","FALSE",,,,,,,6,4,"66.67%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607092204","2026-11-05 13:19:04","2026-11-05 13:28:14",550.2,,"Mac OS","Apple","Macintosh","Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",21.4,28.67,"TRUE","FALSE","FALSE",52,89,"Content","FRAME","26:1388","Click",2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607092204","2026-11-05 13:19:04","2026-11-05 13:28:14",550.2,,"Mac OS","Apple","Macintosh","Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1458","26:1458",5.3,28.67,"TRUE","FALSE","FALSE",50,84,"Content","FRAME","26:1459","Click",2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607092204","2026-11-05 13:19:04","2026-11-05 13:28:14",550.2,,"Mac OS","Apple","Macintosh","Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","28:2159","28:2159",1.9,28.67,"TRUE","FALSE","FALSE",,,,,,,2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607092204","2026-11-05 13:19:04","2026-11-05 13:28:14",550.2,,"Mac OS","Apple","Macintosh","Chrome","157.0.0.0","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","20:601","20:601",0,28.67,"TRUE","FALSE","FALSE",,,,,,,2,0,"0.00%",0
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",11.6,16.79,"TRUE","FALSE","FALSE",50,70,"简体中文","TEXT","385:2380","Misclick",10,8,"80.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",11.6,16.79,"TRUE","FALSE","FALSE",82,58,"Just one clearly labelled ad space that","TEXT","26:1440","Misclick",10,8,"80.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",11.6,16.79,"TRUE","FALSE","FALSE",50,68,"Segment · 简体中文","FRAME","385:2379","Misclick",10,8,"80.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",11.6,16.79,"TRUE","FALSE","FALSE",50,70,"简体中文","TEXT","385:2380","Misclick",10,8,"80.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",11.6,16.79,"TRUE","FALSE","FALSE",51,70,"简体中文","TEXT","385:2380","Misclick",10,8,"80.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",11.6,16.79,"TRUE","FALSE","FALSE",51,71,"简体中文","TEXT","385:2380","Misclick",10,8,"80.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",11.6,16.79,"TRUE","FALSE","FALSE",83,58,"Just one clearly labelled ad space that","TEXT","26:1440","Misclick",10,8,"80.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",11.6,16.79,"TRUE","FALSE","FALSE",87,60,"Just one clearly labelled ad space that","TEXT","26:1440","Misclick",10,8,"80.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",11.6,16.79,"TRUE","FALSE","FALSE",72,89,"Content","FRAME","26:1388","Click",10,8,"80.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1458","26:1458",3.4,16.79,"TRUE","FALSE","FALSE",73,83,"Content","FRAME","26:1459","Click",10,8,"80.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","28:2159","28:2159",1.8,16.79,"TRUE","FALSE","FALSE",,,,,,,10,8,"80.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607074633","2026-11-05 12:42:30","2026-11-05 12:53:27",656.9,"mobile","Android","Samsung","SM-A5660","WeChat","8.0.79.3183","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","20:601","20:601",0,16.79,"TRUE","FALSE","FALSE",,,,,,,10,8,"80.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607067413","2026-11-05 12:34:53","2026-11-05 12:53:07",1094.1,,"Mac OS","Apple","Macintosh","WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",44.8,68.51,"TRUE","FALSE","FALSE",22,48,"Type a place or landmark – no route or s","TEXT","26:1431","Misclick",5,3,"60.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607067413","2026-11-05 12:34:53","2026-11-05 12:53:07",1094.1,,"Mac OS","Apple","Macintosh","WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",44.8,68.51,"TRUE","FALSE","FALSE",16,10,"Content","FRAME","26:1388","Misclick",5,3,"60.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607067413","2026-11-05 12:34:53","2026-11-05 12:53:07",1094.1,,"Mac OS","Apple","Macintosh","WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",44.8,68.51,"TRUE","FALSE","FALSE",80,71,"English","TEXT","26:1448","Misclick",5,3,"60.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607067413","2026-11-05 12:34:53","2026-11-05 12:53:07",1094.1,,"Mac OS","Apple","Macintosh","WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",44.8,68.51,"TRUE","FALSE","FALSE",55,88,"Content","FRAME","26:1388","Click",5,3,"60.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607067413","2026-11-05 12:34:53","2026-11-05 12:53:07",1094.1,,"Mac OS","Apple","Macintosh","WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1458","26:1458",21.7,68.51,"TRUE","FALSE","FALSE",48,84,"Content","FRAME","26:1459","Click",5,3,"60.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607067413","2026-11-05 12:34:53","2026-11-05 12:53:07",1094.1,,"Mac OS","Apple","Macintosh","WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","28:2159","28:2159",1.9,68.51,"TRUE","FALSE","FALSE",,,,,,,5,3,"60.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607067413","2026-11-05 12:34:53","2026-11-05 12:53:07",1094.1,,"Mac OS","Apple","Macintosh","WeChat","7.0.20.1781","zh-CN","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","20:601","20:601",0,68.51,"TRUE","FALSE","FALSE",,,,,,,5,3,"60.00%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",57,70,"Segment · 简体中文","FRAME","385:2379","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",52,70,"简体中文","TEXT","385:2380","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",52,70,"简体中文","TEXT","385:2380","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",29,57,"Just one clearly labelled ad space that","TEXT","26:1440","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",5,53,"Content","FRAME","26:1388","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",85,16,"Content","FRAME","26:1388","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",12,10,"Progress · 1 / 2","FRAME","26:1403","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",50,69,"简体中文","TEXT","385:2380","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",56,70,"简体中文","TEXT","385:2380","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",12,70,"Segment · 繁體中文","FRAME","26:1445","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",19,69,"繁體中文","TEXT","26:1446","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",19,69,"繁體中文","TEXT","26:1446","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",21,69,"繁體中文","TEXT","26:1446","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",50,70,"简体中文","TEXT","385:2380","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",54,71,"Segment · 简体中文","FRAME","385:2379","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",52,72,"Segment · 简体中文","FRAME","385:2379","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",51,71,"简体中文","TEXT","385:2380","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",48,73,"Language Picker","FRAME","26:1444","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",50,71,"简体中文","TEXT","385:2380","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",49,72,"Segment · 简体中文","FRAME","385:2379","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",52,72,"Segment · 简体中文","FRAME","385:2379","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",50,71,"简体中文","TEXT","385:2380","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",52,70,"简体中文","TEXT","385:2380","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",51,69,"简体中文","TEXT","385:2380","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",54,70,"简体中文","TEXT","385:2380","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",82,71,"Segment · English","FRAME","26:1447","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",84,71,"English","TEXT","26:1448","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",11,68,"Segment · 繁體中文","FRAME","26:1445","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",52,67,"Content","FRAME","26:1388","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",56,68,"Segment · 简体中文","FRAME","385:2379","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",11,47,"Vector","VECTOR","26:1427","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",20,57,"Point · No pop-up ads","FRAME","26:1432","Misclick",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387","26:1387",20.2,26.69,"TRUE","FALSE","FALSE",39,89,"Content","FRAME","26:1388","Click",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","26:1458","26:1458",4.8,26.69,"TRUE","FALSE","FALSE",20,85,"Content","FRAME","26:1459","Click",34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","28:2159","28:2159",1.7,26.69,"TRUE","FALSE","FALSE",,,,,,,34,32,"94.12%",1
+"601915417","760e727c-f157-4d7e-a61f-871e0abfd7de","mission","Let's get started!","Please tap the start button to have a try on the app.
+
+Remember to turn on the location info while using the app!
+
+(You can only use English for the app testing.)","607053489","2026-11-05 12:20:42","2026-11-05 12:31:13",631.1,"mobile","Android","Huawei","PPG-AN00","WeChat","8.0.79.3200","zh-HK","link",,,"PATH_BASED","26:1387 > 26:1458 > 28:2159 > 20:601","26:1387 > 26:1458 > 28:2159 > 20:601","20:601","20:601",0,26.69,"TRUE","FALSE","FALSE",,,,,,,34,32,"94.12%",1

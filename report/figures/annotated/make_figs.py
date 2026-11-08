@@ -272,9 +272,48 @@ def f5(outdir):
           ml=96, mr=50, legend="right", legend_w=960, legend_gap=90, max_scale=1.0)
 
 
+# ---------------------------------------------------------------- F3b Picking a place (iPhone, v2.3.39)
+def f3b(outdir):
+    def ip(name):
+        return Panel(f"{SRC}/{name}", (0, 0, 920, 2000), name)
+    p1 = ip("t4-planner-iphone-null-origin.png")
+    p2 = ip("t4-planner-iphone-pick-region.png")
+    p3 = ip("t4-planner-iphone-pick-district-area.png")
+    p4 = ip("t4-planner-iphone-pick-on-map.png")
+
+    def ann(f, a, b, c, d):
+        # 1 origin starts as "null (現在位置)"
+        f.box(a, 112, 285, 420, 350)
+        f.marker(a, 1, (480, 318), to=[(420, 318)])
+        # 2 region list
+        f.box(b, 6, 352, 914, 690)
+        f.marker(b, 2, (40, 352))
+        # the region chosen in step 1 (九龍) expands in place
+        f.box(c, 6, 465, 914, 575)
+        f.marker(c, 2, (790, 520))
+        # 3 district, then area
+        for y0, y1 in [(580, 690), (1152, 1262)]:
+            f.box(c, 6, y0, 914, y1)
+            f.marker(c, 3, (790, (y0 + y1) // 2))
+        # 4 find the spot on the map, then 確認
+        f.ring(d, 460, 1082, 50)
+        f.marker(d, 4, (590, 980), to=[(495, 1047)])
+        f.box(d, 230, 1755, 690, 1838)
+        f.marker(d, 4, (740, 1797), to=[(690, 1797)])
+
+    entries = [
+        (1, "The origin starts as \"null (現在位置)\"; tapping it opens the picker"),
+        (2, "Step 1: choose a region (地圖選點: 香港 / 九龍 / 新界); it expands in place"),
+        (3, "Steps 2-3: choose a district, then an area (油尖旺 → 尖沙咀東/紅磡站)"),
+        (4, "Step 4: find the spot on a map and press 確認"),
+    ]
+    build(f"{outdir}/F3b-pick-location-annotated.png", [p1, p2, p3, p4], [60] * 3, ann,
+          entries, ml=50, mr=50, ncol=2)
+
+
 if __name__ == "__main__":
     outdir = sys.argv[1]
     os.makedirs(outdir, exist_ok=True)
-    which = sys.argv[2:] or ["F1", "F2", "F3", "F4", "F5"]
+    which = sys.argv[2:] or ["F1", "F2", "F3", "F3b", "F4", "F5"]
     for k in which:
-        {"F1": f1, "F2": f2, "F3": f3, "F4": f4, "F5": f5}[k](outdir)
+        {"F1": f1, "F2": f2, "F3": f3, "F3b": f3b, "F4": f4, "F5": f5}[k](outdir)

@@ -51,7 +51,7 @@ For the Discussion (§5.3). Each row reports the result in full, then gives our 
 | 8 | **Map: 9/9, 6/9 direct.** "Forgot the small Map View button at the home page. Thought the map can be opened through an obvious button hidden inside the buttons underneath." Paths: 6 went Home → Nearby → Map; 2 used Home's "Map view" link and arrived in one step; 1 wandered through Trip, Nearby, More and Saved for 8 steps before finding Home's Map view. | Map via Home's "地圖檢視 / Map view" text link or Nearby's Map button; no map tab. | **Partly agree.** The Home link has low visual weight and one participant clearly struggled, but 8 of 9 reached the map in one or two taps, and two used that very link. We **disagree** that the map needs its own tab: the main task is reading arrival times, and a sixth tab works against Hick's law. |
 | 9 | **Landmarks: 8/9; all 9 named both buses to Queen Elizabeth Hospital.** One failure: "Thought the landmarks should be found on Map, but failed to click anything because of no responses from the app (This is normal because it is just a prototype with certain testing routes)." Path: that participant tried the map twice and dropped off there. | Landmarks filter in Nearby lists category, walking time, nearest stop and buses. Map pins were not linked on the test page. | **Prototype limitation, not a design flaw**; the participant said so and the path confirms it. The other 8 went straight to the Landmarks filter (one tap), and the landmark list worked (9/9 comprehension). |
 | 10 | **Text size: 9/9 success, 6/9 direct; 7/9 rated it Easy or Really Easy; after enlarging, 9/9 read Bus 116 correctly at 200%.** Paths: **7 of 9 tapped More as their very first move.** Of the 3 indirect, one opened More but left before finding the setting, one tapped Map view by accident first, and one checked Saved first. Comments: "Don't know they need to enter 'More' page to adjust text size." / "Thought the text size can be pinched open, but tapped Map View by accident and thus entered Map page." | Text size at the top of More (settings), 100/150/200%. | **Disagree.** Text size in the app's settings is standard practice on iOS, Android and virtually every app, and a real build would also follow the phone's system text size. The paths support this: More was the first place 7 of 9 looked. Pinch-to-zoom is a convention for maps, photos and web pages, not app interfaces. Once found, the accommodation worked for everyone. Also our accessibility-focused task (bonus 1%). |
-| 11 | **Onboarding: 9/9, score 91,** but 56% misclick on the welcome screen. | Language segmented control plus Get started. | **Test artefact.** On the en-GB page only Get started was linked, so trying the language buttons registered as misclicks. They work on the zh-HK page. |
+| 11 | **Onboarding: 9/9, score 91,** but 56% misclick on the welcome screen. | Language segmented control plus Get started. | **Test artefact.** On the en-GB page only Get started was linked, so trying the language buttons registered as misclicks. They work on the zh-HK page. The CSV confirms it: all 50 misclicks were on the welcome screen, 34 of them on the language buttons, and one participant made 32 of the 50 ([participants.md](user-test/participants.md)). |
 | 12 | **Satisfaction: all Good or Very Good; usability score 71.** | — | **Positive, read with caution.** Small sample, probably peers, so ratings may be kind; the Maze score penalises alternative paths and taps on unlinked areas, so it partly measures prototype fidelity. We weight task behaviour over ratings. |
 
 **What this means for the Discussion, in five points:** (1) the information design works: once on the right screen, people read arrival times, landmark buses and enlarged text correctly; (2) the clearest weakness is the way into stop saving: only half of those who reached the route screen found it from the Home card, which we accept; (3) the route result's low comprehension has two causes, card redundancy and question wording, and we say both; (4) the navigation paths show that most "indirect" results used designed alternatives, some shorter than the expected path, and that the failures in blocks 7 and 15 fit the test artefacts the participants described; we explain these rather than concede them; (5) where feedback asks us to break platform conventions (text size outside settings, pinch-to-zoom, a map tab), we keep the design and give the reason, and for text size the paths back us (7/9 went to More first).
@@ -87,7 +87,7 @@ Present the §2 accepted points as proposed changes in Future Work. Markers may 
 
 The accessibility pass (a 200% check, then arrival-row changes) is the closest thing to iteration after findings, from our own expert review rather than user testing.
 
-**Limitations to state (6).** n = 9; tested in English only, while one target group is older Cantonese speakers; participant profile not yet documented (see §6); the en-GB test page had fewer working interactions than the full design, which inflates misclicks and caused one failure; Maze's task panel blocked a target once; one comprehension question was ambiguously worded; no screen-reader testing; no re-test. Design issues found in our own audit of the frozen file (decided 8 Nov to report as limitations, not fix):
+**Limitations to state (6).** n = 9; tested in English only, while one target group is older Cantonese speakers; no participant was aged 60+ (ages 18–48, seven of nine aged 18–20), although the checkpoint planned at least one, so the elderly group is not represented; five of nine used a laptop, so most taps were mouse clicks and touch-target size and thumb reach were not really tested; the en-GB test page had fewer working interactions than the full design, which inflates misclicks and caused one failure; Maze's task panel blocked a target once; one comprehension question was ambiguously worded; no screen-reader testing; no re-test. Design issues found in our own audit of the frozen file (decided 8 Nov to report as limitations, not fix):
 - at 200% text, two secondary descriptions on the More screen (S2, S2B) wrap into the row below;
 - on S5, S6 and S7 (zh-HK) the 繁 language label is white on a white pill;
 - the "目前位置" label on F4B is `#BBBBBB` on white (1.92:1, below WCAG 1.4.3);
@@ -124,16 +124,36 @@ Production notes: demo the zh-HK prototype (more complete than the tested en-GB 
 
 ## 6. Gaps to close (missing evidence = 0 marks)
 
-1. **Participant profile:** age range, background, recruitment, test date(s), in person or remote, device. Was anyone 60+? The checkpoint promised at least one; if not, say so in limitations. *Chenyang is collecting this (asked 8 Nov).*
-2. **Per-participant raw export from Maze** (CSV with timestamps): markers check "timestamps, per-participant, per-task metrics", which neither the PDF nor the shared online report contains (the online report shows aggregated paths only). Export it from the Maze project's Results page before the plan or trial expires. *Chenyang (asked 8 Nov).*
+1. **Participant profile: partly done (8 Nov).** Chenyang's sheet is [user-test/user_basic_information.docx](user-test/user_basic_information.docx): Maze ID, age, device and test date for all 9 participants.
+
+   | | |
+   |---|---|
+   | Ages | 18–48 (median 19, mean 25.1). Seven aged 18–20, two aged 45 and 48. **No one aged 60+.** |
+   | Devices | Laptop 5, mobile phone 3, tablet 1 |
+   | Test dates | 5 Nov ×4, 6 Nov ×2, 7 Nov ×3 (2026) |
+
+   Still to ask Chenyang:
+   - background or occupation (don't assume the 18–20s are students);
+   - how participants were recruited;
+   - remote or in person, moderated or not;
+   - whether the Maze IDs can be matched to the rows in `user_feedback.docx`, so comments can be linked to age and device;
+   - what time the 5 Nov sessions ran, and when the prototype was imported into Maze. The design was last saved on 5 Nov at 17:56, so the report needs to know whether any 5 Nov session saw an earlier version.
+2. **Per-participant raw export from Maze: block 1 only so far (8 Nov).** Markers check for "timestamps, per-participant, per-task metrics".
+   - [user-test/kowloonbusredesign_block-results_mission.csv](user-test/kowloonbusredesign_block-results_mission.csv) has, for each participant: start and end times, device, OS, browser, language, path, time on each screen, and every click with its coordinates.
+   - It covers only block 1 ("Let's get started!"). Its totals match the PDF exactly (mean 33.1 s, 73.5% misclicks).
+   - [user-test/participants.md](user-test/participants.md) joins it with the participant sheet: P1–P9 profile, session times and block 1 per participant. Use it for Appendix A.
+   - **Still needed:** the same export for the other mission blocks (3, 6, 7, 9, 12, 14, 15, 18). *Ask Chenyang.*
+   - Also ask him to confirm the CSV's timezone. If it is UTC, all sessions began after the last design save.
 3. **Task script:** done; verbatim wording of all 21 blocks is in [user-test/maze-figures.md](user-test/maze-figures.md) §3.
 4. **Accessibility audit of the original app** (bonus 2%: "documented accessibility audit of the existing app (e.g. WCAG basics: contrast, touch target size, text scaling, screen-reader compatibility)"). Owner: Moling. **Mostly done (8 Nov):** [report/appendix-d-accessibility-audit.md](report/appendix-d-accessibility-audit.md) has the method, a 10-row results table, Figure D.1 ([report/figures/audit/appendix-d-contrast-targets.png](report/figures/audit/appendix-d-contrast-targets.png)), a per-screen table of what the app exposes to screen readers, about 60 words for §2 or §4, and how the redesign answers each finding. Results:
    - Contrast: main text passes. Search placeholder 1.38:1, Nearby mode buttons 1.92:1 and the slate bars 4.37:1 fail. All three are confirmed on an iPhone (v2.3.39, 8 Nov), which also shows the Nearby empty-state message at 1.66:1.
    - Targets: stop icons 26 pt (meet 24 pt, under 44 pt); the planner star fails WCAG 2.5.8.
-   - Text: no text-size setting in the app; text already cut off at the default size.
+   - Text: no text-size setting in the app; it ignores iOS Larger Text; text already cut off at the default size.
    - Screen reader: tabs, the More menu and the language options are labelled. Route rows, stop lists, keypads and all icon-only buttons are not exposed (provisional).
 
-   **Still needs a real iPhone (about 20 minutes, steps in the appendix):** the Larger Text test, and a VoiceOver walk-through to confirm the screen-reader row. Until then, the 04 draft does not claim that the app "ignores the phone's text size".
+   **Larger Text test: done on an iPhone (8 Nov).** The app ignores the system text size: Home text is identical to the pixel at the maximum setting (Figure D.2, [report/figures/audit/appendix-d-text-scaling.png](report/figures/audit/appendix-d-text-scaling.png)). The 04 draft now says so.
+
+   **Still to do (about 10 minutes, steps in the appendix):** a VoiceOver walk-through to confirm the screen-reader row.
 5. **Annotated original screenshots:** done (8 Nov). Five figures are in [report/figures/annotated/](report/figures/annotated/), `F1-home-annotated.png` … `F5-more-annotated.png`:
    - Format: 2480 px wide at 400 dpi (15.7 cm in Word). Numbered red callouts with an English legend.
    - Screenshot pixels unchanged: only the Mac window frame was cropped off.
@@ -143,6 +163,8 @@ Production notes: demo the zh-HK prototype (more complete than the tested en-GB 
    - F5 now uses the iPhone capture of the More menu (v2.3.39). It shows 26 icons; the Mac capture had cut off the last row, so the drafts now say 26.
    - Six iPhone captures of v2.3.39 (8 Nov, `*-iphone-*.png`) add two points to the drafts: a banner advert on every main tab, and an empty 收藏 with no hint of how to save.
    - Their Home and Nearby show "no stops nearby" and carry Japanese-language ads, which suggests the phone was outside Hong Kong. Use them for these points only, not as a typical Home.
+   - Five iPhone captures of the v2.3.39 planner (`t4-planner-iphone-*.png`) make a new figure, 4.3b ([report/figures/annotated/F3b-pick-location-annotated.png](report/figures/annotated/F3b-pick-location-annotated.png)): the origin still shows "null", and picking a place takes region → district → area → map + 確認.
+   - The fifth capture (`t4-planner-iphone-smart-suggestion-result.png`) is not used as evidence that the AI changes the stop. Its origin was a place (港鐵紅磡站), so boarding at a stop 448 m away is a normal result.
    - `make_figs.py` re-renders the figures.
 6. **Xulu Zhang's SID** for the cover page. *Haochen will fill it in.*
 7. **References:** done. [report/references.md](report/references.md) has:
