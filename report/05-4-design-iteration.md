@@ -53,10 +53,11 @@ The version history agrees with this.
 
 - **Figure (done):** [figures/iteration/F3A-route-search-iteration-strip.png](figures/iteration/F3A-route-search-iteration-strip.png). It shows English route search results at 28 Oct 14:39, 30 Oct 00:15 and 5 Nov 17:56, captured from the version history. The single captures are in the same folder.
   - **Why this screen:** report figures use the en-GB page. v1 had only one English screen, *F3B · Route Search / English UI*. It is the same Figma frame (node `1:1126`) that became the en-GB *F3A · Route Search / Recommended options*, so all three panels show one frame over time.
-  - **v1 (Li-En Lo):** a 390 × 844 device mock-up with no status bar. It still has a red ETA ("27 min"), pink-tinted summary tiles labelled in Chinese (預計車程, 全程車費, 途經), Chinese stop names in the English UI, and a floating "English" pill.
+  - **v1 (Li-En Lo):** a 390 × 844 device mock-up with no status bar. Its headline is an unlabelled red "27 min" (the trip time). It shows no wait for the next bus at all. It also has pink-tinted summary tiles labelled in Chinese (預計車程, 全程車費, 途經), Chinese stop names in the English UI, and a floating "English" pill.
   - **v2 (Haochen Fa), after the visual clean-up:**
-    - 402 × 874 with the iOS status bar; ETA in ink ("28 min", "Total trip · arrive 11:00").
-    - The pink tiles are gone. The trip reads as legs ("Walk 2 min › 87D 6 stops"), with "Next bus in 10 min" and a Live badge.
+    - 402 × 874 with the iOS status bar. The trip time is in ink and labelled ("28 min", "Total trip · arrive 11:00").
+    - The wait is now stated twice, with its source: "Next bus in 10 min" with a Live badge, and "Next bus 10:42 · in 10 min" in the bus step.
+    - The pink tiles are gone. The trip reads as legs ("Walk 2 min › 87D 6 stops").
     - A walk-then-bus itinerary, English stop names, and no floating pill.
   - **Final (Moling Kong's 5 Nov accessibility pass):** on this screen the visible change is small: the Live badge on the arrival row is larger. The pass's bigger changes are on Home and route detail (see the 5 Nov row above).
   - The earlier zh-HK Home strip (`F1-home-*` in the same folder) is superseded. It is kept only as a record and is not used in the report.
