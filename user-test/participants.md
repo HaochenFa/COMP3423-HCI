@@ -10,17 +10,17 @@ Sources:
 
 ## Profile
 
-| P | Tester ID | Age | Device (sheet) | OS · model · browser (CSV) | Browser language | Date | Start–end (as exported) | Study time |
+| P | Tester ID | Age | Device (sheet) | OS · model · browser (CSV) | Browser language | Date | Start–end (HKT) | Study time |
 |---|---|---|---|---|---|---|---|---|
-| P1 | 607053489 | 19 | Mobile phone | Android · PPG-AN00 · WeChat | zh-HK | 5 Nov | 12:20:42–12:31:13 | 10.5 min |
-| P2 | 607067413 | 48 | Laptop | Mac OS · Macintosh · WeChat | zh-CN | 5 Nov | 12:34:53–12:53:07 | 18.2 min |
-| P3 | 607074633 | 20 | Mobile phone | Android · SM-A5660 · WeChat | zh-CN | 5 Nov | 12:42:30–12:53:27 | 10.9 min |
-| P4 | 607092204 | 45 | Laptop | Mac OS · Macintosh · Chrome | zh-CN | 5 Nov | 13:19:04–13:28:14 | 9.2 min |
-| P5 | 607462892 | 19 | Laptop | Windows · Chrome | zh-CN | 6 Nov | 03:21:35–03:28:27 | 6.9 min |
-| P6 | 607587743 | 19 | Laptop | Windows · Chrome | zh-CN | 6 Nov | 11:43:56–11:51:34 | 7.6 min |
-| P7 | 608091492 | 19 | Laptop | Windows · WeChat | zh-CN | 7 Nov | 05:19:25–05:41:48 | 22.4 min |
-| P8 | 608092742 | 19 | Tablet | iPad (reported as Mac OS) · Safari | zh-TW | 7 Nov | 05:24:58–05:31:41 | 6.7 min |
-| P9 | 607192590 | 18 | Mobile phone | iOS · iPhone · Instagram | en-GB | 7 Nov | 11:29:38–11:36:47 | 7.2 min |
+| P1 | 607053489 | 19 | Mobile phone | Android · PPG-AN00 · WeChat | zh-HK | 5 Nov | 20:20–20:31 | 10.5 min |
+| P2 | 607067413 | 48 | Laptop | Mac OS · Macintosh · WeChat | zh-CN | 5 Nov | 20:34–20:53 | 18.2 min |
+| P3 | 607074633 | 20 | Mobile phone | Android · SM-A5660 · WeChat | zh-CN | 5 Nov | 20:42–20:53 | 10.9 min |
+| P4 | 607092204 | 45 | Laptop | Mac OS · Macintosh · Chrome | zh-CN | 5 Nov | 21:19–21:28 | 9.2 min |
+| P5 | 607462892 | 19 | Laptop | Windows · Chrome | zh-CN | 6 Nov | 11:21–11:28 | 6.9 min |
+| P6 | 607587743 | 19 | Laptop | Windows · Chrome | zh-CN | 6 Nov | 19:43–19:51 | 7.6 min |
+| P7 | 608091492 | 19 | Laptop | Windows · WeChat | zh-CN | 7 Nov | 13:19–13:41 | 22.4 min |
+| P8 | 608092742 | 19 | Tablet | iPad (reported as Mac OS) · Safari | zh-TW | 7 Nov | 13:24–13:31 | 6.7 min |
+| P9 | 607192590 | 18 | Mobile phone | iOS · iPhone · Instagram | en-GB | 7 Nov | 19:29–19:36 | 7.2 min |
 
 **Sheet vs CSV:** all nine devices and dates agree between the two sources.
 
@@ -32,14 +32,16 @@ Sources:
 - Browser language: zh-CN 6, zh-HK 1, zh-TW 1, en-GB 1.
   - This is the device setting only. It suggests most participants normally use Simplified Chinese, but it does not say where they are from. Do not report it as nationality.
 
-**Timezone:** Maze's help page does not say which timezone the "Started at" column uses.
-- If the times are UTC, as the 03:00–05:00 starts suggest, add 8 hours for Hong Kong time:
-  - 5 Nov sessions: 20:20–21:28;
-  - 6 Nov: 11:21 and 19:43;
-  - 7 Nov: 13:19, 13:24 and 19:29.
-- On that reading, every session began after the design's last save (5 Nov, 17:56).
-- If the times are Hong Kong time, the four 5 Nov sessions ran before Moling's accessibility pass (16:14–17:56).
-- Ask Chenyang to confirm, for example from the time he remembers sending the link. Also ask when the prototype was imported into Maze, since Maze tests the imported copy.
+**Recruitment and format (from the User Researcher, 8 Nov):**
+- Participants were classmates, friends and relatives of the team, contacted by direct message.
+- Each did the test alone and remotely, through the Maze link, with no moderator present.
+- After the test, some participants asked the researcher about the design and its logic. These follow-up conversations gave informal feedback and first reactions.
+- The Maze test had no open-question blocks, so the participant comments in [user_feedback.docx](user_feedback.docx) are the researcher's notes, not Maze data.
+
+**Session times:** the table shows Hong Kong time (HKT).
+- Maze does not document the timezone of its "Started at" column. We read it as UTC and added 8 hours (team decision, 8 Nov).
+- If the times were Hong Kong time, three sessions would have started between 03:00 and 05:00.
+- Every session began after the design's last save (5 Nov, 17:56 HKT).
 
 ## Block 1 per participant (onboarding, O1 → O2 → S5 → Home)
 

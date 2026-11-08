@@ -87,7 +87,7 @@ Present the §2 accepted points as proposed changes in Future Work. Markers may 
 
 The accessibility pass (a 200% check, then arrival-row changes) is the closest thing to iteration after findings, from our own expert review rather than user testing.
 
-**Limitations to state (6).** n = 9; tested in English only, while one target group is older Cantonese speakers; no participant was aged 60+ (ages 18–48, seven of nine aged 18–20), although the checkpoint planned at least one, so the elderly group is not represented; five of nine used a laptop, so most taps were mouse clicks and touch-target size and thumb reach were not really tested; the en-GB test page had fewer working interactions than the full design, which inflates misclicks and caused one failure; Maze's task panel blocked a target once; one comprehension question was ambiguously worded; no screen-reader testing; no re-test. Design issues found in our own audit of the frozen file (decided 8 Nov to report as limitations, not fix):
+**Limitations to state (6).** n = 9; tested in English only, while one target group is older Cantonese speakers; no participant was aged 60+ (ages 18–48, seven of nine aged 18–20), although the checkpoint planned at least one, so the elderly group is not represented; five of nine used a laptop, so most taps were mouse clicks and touch-target size and thumb reach were not really tested; participants were classmates, friends and relatives, who may rate a friend's design kindly (note it beside the ease ratings); tasks were done remotely and unmoderated, so no one watched participants work and hesitation shows only in the click data. Follow-up conversations, where some participants asked about the design and its logic, added informal feedback, but not everyone took part and they followed no fixed questions; the en-GB test page had fewer working interactions than the full design, which inflates misclicks and caused one failure; Maze's task panel blocked a target once; one comprehension question was ambiguously worded; no screen-reader testing of the prototype, and the original app's screen-reader check was an inspection, not a VoiceOver session; no re-test. Design issues found in our own audit of the frozen file (decided 8 Nov to report as limitations, not fix):
 - at 200% text, two secondary descriptions on the More screen (S2, S2B) wrap into the row below;
 - on S5, S6 and S7 (zh-HK) the 繁 language label is white on a white pill;
 - the "目前位置" label on F4B is `#BBBBBB` on white (1.92:1, below WCAG 1.4.3);
@@ -124,7 +124,7 @@ Production notes: demo the zh-HK prototype (more complete than the tested en-GB 
 
 ## 6. Gaps to close (missing evidence = 0 marks)
 
-1. **Participant profile: partly done (8 Nov).** Chenyang's sheet is [user-test/user_basic_information.docx](user-test/user_basic_information.docx): Maze ID, age, device and test date for all 9 participants.
+1. **Participant profile: done (8 Nov).** Chenyang's sheet is [user-test/user_basic_information.docx](user-test/user_basic_information.docx): Maze ID, age, device and test date for all 9 participants.
 
    | | |
    |---|---|
@@ -132,28 +132,27 @@ Production notes: demo the zh-HK prototype (more complete than the tested en-GB 
    | Devices | Laptop 5, mobile phone 3, tablet 1 |
    | Test dates | 5 Nov ×4, 6 Nov ×2, 7 Nov ×3 (2026) |
 
-   Still to ask Chenyang:
-   - background or occupation (don't assume the 18–20s are students);
-   - how participants were recruited;
-   - remote or in person, moderated or not;
-   - whether the Maze IDs can be matched to the rows in `user_feedback.docx`, so comments can be linked to age and device;
-   - what time the 5 Nov sessions ran, and when the prototype was imported into Maze. The design was last saved on 5 Nov at 17:56, so the report needs to know whether any 5 Nov session saw an earlier version.
+   - **Recruitment:** classmates, friends and relatives of the team, contacted by direct message.
+   - **Format:** each participant did the test alone and remotely through the Maze link, unmoderated. Afterwards, some participants asked the researcher about the design and its logic, which gave informal feedback and first reactions. The comments in `user_feedback.docx` are the researcher's notes; the Maze test had no open questions.
+   - **Session times:** the CSV's times are read as UTC (team decision, 8 Nov), so sessions ran 5 Nov 20:20 to 7 Nov 19:36 HKT, all after the design's last save (5 Nov 17:56). Details are in [user-test/participants.md](user-test/participants.md).
+   - Optional, if Chenyang can tell:
+     - whether the Maze IDs match the rows in `user_feedback.docx`, so comments can be linked to age and device;
+     - whether the prototype was imported into Maze (or re-synced) after 5 Nov 17:56. Maze tests the copy it imported, so an earlier import would have missed Moling's arrival-row changes.
 2. **Per-participant raw export from Maze: block 1 only so far (8 Nov).** Markers check for "timestamps, per-participant, per-task metrics".
    - [user-test/kowloonbusredesign_block-results_mission.csv](user-test/kowloonbusredesign_block-results_mission.csv) has, for each participant: start and end times, device, OS, browser, language, path, time on each screen, and every click with its coordinates.
    - It covers only block 1 ("Let's get started!"). Its totals match the PDF exactly (mean 33.1 s, 73.5% misclicks).
    - [user-test/participants.md](user-test/participants.md) joins it with the participant sheet: P1–P9 profile, session times and block 1 per participant. Use it for Appendix A.
-   - **Still needed:** the same export for the other mission blocks (3, 6, 7, 9, 12, 14, 15, 18). *Ask Chenyang.*
-   - Also ask him to confirm the CSV's timezone. If it is UTC, all sessions began after the last design save.
+   - **Still needed:** the same export for the other mission blocks (3, 6, 7, 9, 12, 14, 15, 18). *Chenyang is downloading them (8 Nov).*
 3. **Task script:** done; verbatim wording of all 21 blocks is in [user-test/maze-figures.md](user-test/maze-figures.md) §3.
 4. **Accessibility audit of the original app** (bonus 2%: "documented accessibility audit of the existing app (e.g. WCAG basics: contrast, touch target size, text scaling, screen-reader compatibility)"). Owner: Moling. **Mostly done (8 Nov):** [report/appendix-d-accessibility-audit.md](report/appendix-d-accessibility-audit.md) has the method, a 10-row results table, Figure D.1 ([report/figures/audit/appendix-d-contrast-targets.png](report/figures/audit/appendix-d-contrast-targets.png)), a per-screen table of what the app exposes to screen readers, about 60 words for §2 or §4, and how the redesign answers each finding. Results:
    - Contrast: main text passes. Search placeholder 1.38:1, Nearby mode buttons 1.92:1 and the slate bars 4.37:1 fail. All three are confirmed on an iPhone (v2.3.39, 8 Nov), which also shows the Nearby empty-state message at 1.66:1.
    - Targets: stop icons 26 pt (meet 24 pt, under 44 pt); the planner star fails WCAG 2.5.8.
    - Text: no text-size setting in the app; it ignores iOS Larger Text; text already cut off at the default size.
-   - Screen reader: tabs, the More menu and the language options are labelled. Route rows, stop lists, keypads and all icon-only buttons are not exposed (provisional).
+   - Screen reader: tabs, the More menu and the language options are labelled. Route rows, stop lists, keypads and all icon-only buttons are not exposed (accessibility-tree inspection, no VoiceOver session).
 
    **Larger Text test: done on an iPhone (8 Nov).** The app ignores the system text size: Home text is identical to the pixel at the maximum setting (Figure D.2, [report/figures/audit/appendix-d-text-scaling.png](report/figures/audit/appendix-d-text-scaling.png)). The 04 draft now says so.
 
-   **Still to do (about 10 minutes, steps in the appendix):** a VoiceOver walk-through to confirm the screen-reader row.
+   **VoiceOver: not doing it (decided 8 Nov).** The screen-reader row rests on the accessibility-tree inspection, and the appendix says so. The audit is complete.
 5. **Annotated original screenshots:** done (8 Nov). Five figures are in [report/figures/annotated/](report/figures/annotated/), `F1-home-annotated.png` … `F5-more-annotated.png`:
    - Format: 2480 px wide at 400 dpi (15.7 cm in Word). Numbered red callouts with an English legend.
    - Screenshot pixels unchanged: only the Mac window frame was cropped off.
