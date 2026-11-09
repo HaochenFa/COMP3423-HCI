@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## What this repository is
 
-This folder holds the materials for a COMP3423 (Human–Computer Interaction, PolyU) group project: redesigning **App1933**, the official app of Kowloon Motor Bus and Long Win Bus (KMB · LWB). The work happens in documents, screenshots and a Figma file. The only build is the final report: see `report/build/`.
+This folder holds the materials for a COMP3423 (Human–Computer Interaction, PolyU) group project: redesigning **App1933**, the official app of Kowloon Motor Bus and Long Win Bus (KMB · LWB). The work happens in documents, screenshots and a Figma file. Two deliverables are built by scripts: the final report (`report/build/`) and the slides (`slides/build/`).
 
 - `Group-Project-Description.pdf`: the brief and the full grading rubric (Appendix II). Due **15 Nov 2026, 23:59**. Deliverables: a report (Word or PDF, at most 20 pages), a PPT, a video of at most 10 minutes, a public Figma prototype covering at least 5 features, and a Maze test with at least 5 real participants.
 - `COMP3423_Mid-Project_Checkpoint_App1933.docx`: the checkpoint report. It covers team roles, target users (elderly passengers; students and commuters), the user journey, features F1–F5 and the Maze plan. It is the main source for project decisions.
@@ -15,6 +15,7 @@ This folder holds the materials for a COMP3423 (Human–Computer Interaction, Po
 - `final-deliverables-plan.md`: the plan for the final report, slides and video, including the findings-and-position table for the Discussion.
 - `report/`: Markdown drafts of report sections (`03-overall-design.md`, `04-feature-details.md`), written from the en-GB page of the frozen Figma file, and `05-4-design-iteration.md`, the dated design timeline taken from Figma version history. `appendix-d-accessibility-audit.md` is the WCAG audit of the original app (v2.3.38): contrast, target size, text scaling, screen-reader exposure. Its evidence figure and measurement scripts are in `figures/audit/`. The audit is complete. The iPhone text-size test shows the app ignores Larger Text (Figure D.2). The screen-reader check is an accessibility-tree inspection; the team decided on 8 Nov not to run VoiceOver.
 - `report/COMP3423_App1933_Final_Report.docx` is the final report (Group A21). It is generated: the text lives in `report/build/part1.js`–`part4.js`, so edit those and rebuild with `node build_report.js` (never hand-edit the DOCX). `figs.py` there builds `report/figures/final/`. Run `./check.sh` after every change: the body (cover to Section 6) must end by page 20. `report/build/README.md` has the details.
+- `slides/COMP3423_App1933_Presentation.pptx` is the presentation deck (21 slides, speaker notes with presenter and timing). It is generated too: the slide text, notes and chart data live in `slides/build/build_slides.js`, and `slide_figs.py` there builds its images. Run `python3 slide_figs.py`, then `node build_slides.js`; never hand-edit the PPTX. White background, Arial, brand red for key numbers only, en-GB screens, numbers identical to the report. `slides/build/README.md` has the running order.
 
 ## Status (8 Nov 2026)
 
