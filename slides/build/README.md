@@ -5,6 +5,7 @@ Builds `slides/COMP3423_App1933_Presentation.pptx`, the 21-slide deck for the pr
 | File | What it holds |
 |---|---|
 | `build_slides.js` | Theme, slide layouts, every slide in order, speaker notes (presenter and timing for each slide) and the chart data |
+| `build_script.js` | The narration for the video, written to `slides/COMP3423_App1933_Presentation_Script.docx`: one section per slide with its presenter, an estimated time and the click path for the live walkthrough |
 | `slide_figs.py` | Images for the slides, written to `img/`: the original-app screenshots with numbered callouts (the numbers match the list on each feature slide), the marked English Home screens for the save finding, the text-size captures and the component crops |
 
 The English screens come from `report/build/screens/`, the iteration strip from `report/figures/iteration/`, and the annotation helpers from `report/figures/annotated/annotlib.py`. Every number on the slides matches the report (`report/build/part3.js`) and the Maze data (`user-test/participants.md`).
@@ -27,6 +28,14 @@ python3 slide_figs.py
 node build_slides.js
 ```
 
+Build the script:
+
+```bash
+node build_script.js
+```
+
+It prints the word count and estimated time for each slide. Times assume an even pace of 145 words a minute; keep the total under 10 minutes.
+
 ## Check
 
 Render the slides to images and look at every one:
@@ -39,7 +48,7 @@ LibreOffice can wrap text slightly differently from PowerPoint, so check the fin
 
 The deck also has to survive an import into Canva. Canva's PowerPoint import drops native tables, replaces chart labels with numbers, loses line-end arrowheads and paragraph spacing, so the builder draws charts, tables and arrows from plain shapes and text boxes, and spaces list items with small empty lines. Keep it that way: no `addChart`, `addTable` or line arrowheads. Canva does import the speaker notes. Each note ends with its slide number, which is harmless. Table rows have fixed heights, so if you change a table's text, check that the `lines` count for each row still matches.
 
-## Running order (about 9 min 50 s)
+## Running order (about 9 min 40 s; the words are in the script DOCX)
 
 | Slides | Part | Presenter |
 |---|---|---|

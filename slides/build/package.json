@@ -1,12 +1,14 @@
 {
   "name": "comp3423-app1933-slides",
   "private": true,
-  "description": "Builds the COMP3423 App1933 presentation (PPTX).",
+  "description": "Builds the COMP3423 App1933 presentation (PPTX) and its script (DOCX).",
   "scripts": {
     "figures": "python3 slide_figs.py",
-    "build": "node build_slides.js"
+    "build": "node build_slides.js",
+    "script": "node build_script.js"
   },
   "dependencies": {
+    "docx": "^9.15.3",
     "pptxgenjs": "^3.12.0",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
