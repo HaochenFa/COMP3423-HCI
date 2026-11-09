@@ -148,12 +148,98 @@ function stat(slide, big, label, x, y, w, o = {}) {
   text(slide, label, { x, y: y + bh + 0.06, w, h: o.labelH || 0.7, fontSize: o.labelSize || 14 });
 }
 
+// Charts, tables, arrows and list spacing below are built from plain shapes
+// and text boxes. Canva's PowerPoint import drops native tables, replaces chart
+// labels with numbers, loses line-end arrowheads and paragraph spacing; plain
+// shapes and text come through intact, and look the same in PowerPoint.
+
+// A straight stroke from (x1, y1) to (x2, y2), t inches thick: a rotated rectangle.
+function stroke(slide, x1, y1, x2, y2, t, color) {
+  const dx = x2 - x1, dy = y2 - y1, len = Math.hypot(dx, dy);
+  if (len < 0.005) return;
+  slide.addShape(pres.shapes.RECTANGLE, { x: (x1 + x2) / 2 - len / 2, y: (y1 + y2) / 2 - t / 2, w: len, h: t, rotate: (Math.atan2(dy, dx) * 180) / Math.PI, fill: { color } });
+}
+
+// A line with a triangular head at (x2, y2), unless o.head is false; o.dash draws it dashed.
 function arrow(slide, x1, y1, x2, y2, o = {}) {
-  slide.addShape(pres.shapes.LINE, {
-    x: Math.min(x1, x2), y: Math.min(y1, y2), w: Math.abs(x2 - x1), h: Math.abs(y2 - y1),
-    flipH: x2 < x1, flipV: y2 < y1,
-    line: { color: o.color || K.mid, width: o.width || 1.5, dashType: o.dash || "solid", endArrowType: o.head === false ? undefined : "triangle" },
+  const color = o.color || K.mid, t = (o.width || 1.5) / 72;
+  const len = Math.hypot(x2 - x1, y2 - y1), ux = (x2 - x1) / len, uy = (y2 - y1) / len;
+  let ex = x2, ey = y2;
+  if (o.head !== false) {
+    const hl = Math.max(0.1, 4.8 * t), hw = 0.85 * hl;
+    ex = x2 - ux * hl; ey = y2 - uy * hl;
+    // the triangle points up; rotating it about its centre turns it along the line
+    slide.addShape(pres.shapes.ISOSCELES_TRIANGLE, { x: x2 - (ux * hl) / 2 - hw / 2, y: y2 - (uy * hl) / 2 - hl / 2, w: hw, h: hl, rotate: (Math.atan2(uy, ux) * 180) / Math.PI + 90, fill: { color } });
+  }
+  if (!o.dash) return stroke(slide, x1, y1, ex, ey, t, color);
+  const dash = 0.11, gap = 0.075, total = Math.hypot(ex - x1, ey - y1);
+  for (let d = 0; d < total; d += dash + gap) {
+    const d2 = Math.min(d + dash, total);
+    stroke(slide, x1 + ux * d, y1 + uy * d, x1 + ux * d2, y1 + uy * d2, t, color);
+  }
+}
+
+// A key of coloured squares; o.centre centres it on that x, otherwise it starts at x.
+function legend(slide, items, x, y, o = {}) {
+  const fs = o.fontSize || 12, sq = 0.18;
+  const widths = items.map(([lab]) => sq + 0.1 + lab.length * fs * 0.0068 + 0.25);
+  let lx = o.centre === undefined ? x : o.centre - widths.reduce((a, b) => a + b, 0) / 2;
+  items.forEach(([lab, hex], i) => {
+    slide.addShape(pres.shapes.RECTANGLE, { x: lx, y: y + 0.05, w: sq, h: sq, fill: { color: hex } });
+    text(slide, lab, { x: lx + sq + 0.08, y, w: widths[i], h: 0.28, fontSize: fs, color: o.color || K.ink, valign: "middle" });
+    lx += widths[i];
   });
+}
+
+// Horizontal bars, one row per category, with segments stacked left to right.
+// rows: [{ label, segs: [[value, hex], ...] }]. Values sit inside the segments
+// (o.inside) or after the bar, formatted by o.end(total).
+function hbars(slide, o) {
+  o.rows.forEach((r, i) => {
+    const y = o.y + i * o.rowH, by = y + (o.rowH - o.barH) / 2;
+    text(slide, r.label, { x: o.x, y, w: o.labelW, h: o.rowH, fontSize: o.labelSize || 13, align: "right", valign: "middle" });
+    let x = o.bx, total = 0;
+    for (const [v, hex] of r.segs) {
+      if (!v) continue;
+      const w = v * o.scale;
+      slide.addShape(pres.shapes.RECTANGLE, { x, y: by, w, h: o.barH, fill: { color: hex } });
+      if (o.inside) text(slide, String(v), { x, y: by, w, h: o.barH, fontSize: o.valueSize || 14, bold: true, color: K.white, align: "center", valign: "middle" });
+      x += w; total += v;
+    }
+    if (o.end) text(slide, o.end(total), { x: x + 0.06, y: by, w: 0.8, h: o.barH, fontSize: o.valueSize || 14, bold: true, valign: "middle" });
+  });
+}
+
+// A table as text boxes between horizontal rules, header row shaded.
+// lines[i] is how many lines of text row i holds, which sets its height.
+function ruledTable(slide, rows, o) {
+  const fs = o.fontSize || 12, pad = o.pad || 0.07, lineH = (fs * 1.2) / 72, inset = 0.08;
+  const w = o.colW.reduce((a, b) => a + b, 0);
+  let y = o.y;
+  rows.forEach((r, i) => {
+    const h = o.lines[i] * lineH + 2 * pad;
+    if (i === 0) slide.addShape(pres.shapes.RECTANGLE, { x: o.x, y, w, h, fill: { color: K.panel } });
+    let x = o.x;
+    r.forEach((c, j) => {
+      text(slide, c, { x: x + inset, y, w: o.colW[j] - 2 * inset, h, fontSize: fs, bold: i === 0 || (o.boldFirst && j === 0), valign: "middle" });
+      x += o.colW[j];
+    });
+    if (i === 0) rule(slide, o.x, y, w);
+    y += h;
+    rule(slide, o.x, y, w);
+  });
+}
+
+// Runs for a bulleted list in one text box. The gap between items is a small
+// empty line (gap, in points) rather than paragraph spacing, which Canva drops.
+function bullets(items, gap) {
+  const runs = [];
+  items.forEach((t, k) => {
+    const last = k === items.length - 1;
+    runs.push({ text: t, options: { bullet: { indent: 18 }, breakLine: !last } });
+    if (!last) runs.push({ text: " ", options: { fontSize: gap, breakLine: true } });
+  });
+  return runs;
 }
 
 function rule(slide, x, y, w) {
@@ -183,8 +269,6 @@ function content(section, title, notes) {
   if (notes) s.addNotes(notes);
   return s;
 }
-
-const chartText = { catAxisLabelFontFace: "Arial", valAxisLabelFontFace: "Arial", dataLabelFontFace: "Arial", legendFontFace: "Arial" };
 
 // ------------------------------------------------------------------ feature slide
 async function feature(o) {
@@ -252,7 +336,7 @@ async function build() {
       s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x, y, w, h: 2.45, rectRadius: 0.12, fill: { color: K.panel }, line: { color: K.panel, width: 0.5 } });
       await iconCircle(s, ic, x + 0.35, y + 0.35, 0.8);
       text(s, head, { x: x + 1.4, y: y + 0.35, w: w - 1.7, h: 0.45, fontSize: 18, bold: true });
-      text(s, lines.map((t, k) => ({ text: t, options: { bullet: true, breakLine: k < lines.length - 1 } })), { x: x + 1.4, y: y + 0.9, w: w - 1.7, h: 1.4, fontSize: 14, paraSpaceAfter: 6 });
+      text(s, bullets(lines, 5), { x: x + 1.4, y: y + 0.9, w: w - 1.7, h: 1.4, fontSize: 14 });
     }
   }
 
@@ -440,18 +524,15 @@ async function build() {
     });
     text(s, "The boxed text is the same size to the pixel before and after: App1933 ignores the iPhone's text size (WCAG 1.4.4). iPhone, v2.3.39, 8 Nov 2026.", { x: ML, y: 5.75, w: 3 * pw + 0.56, h: 0.75, fontSize: 12, color: K.grey });
     const tx = 6.95, tw = W - ML - tx;
-    const hd = (t) => ({ text: t, options: { bold: true, fill: { color: HEX.lt2 } } });
     const rows = [
-      [hd("Check"), hd("Original app"), hd("Redesign")],
+      ["Check", "Original app", "Redesign"],
       ["Contrast (1.4.3)", "Search hint 1.4:1; Nearby buttons 1.9:1", "1,155 of 1,169 text layers at 4.5:1 or more"],
       ["Target size (2.5.8)", "Stop icons 26 pt; advert skip button about 24 pt", "None of 98 links under 24 pt; 84 (86%) at 44 pt or more"],
       ["Text size (1.4.4)", "No setting, and the phone's size is ignored", "100%, 150% and 200% steps at the top of More"],
       ["Arrival status", "Live and timetable minutes look the same", "Live, Scheduled and Offline written out, not colour alone (1.4.1)"],
       ["Screen reader", "Most content not exposed to assistive technology", "Labels specified in the design only; not tested"],
     ];
-    const line = { type: "solid", pt: 0.75, color: HEX.accent4 }, none = { type: "none" };
-    s.addTable(rows.map((r, i) => r.map((c) => (typeof c === "string" ? { text: c, options: { bold: false } } : c)).map((c, j) => ({ ...c, options: { ...c.options, lang: LANG, bold: c.options.bold || j === 0, border: [i === 0 ? line : none, none, line, none] } }))),
-      { x: tx, y: 1.3, w: tw, colW: [1.5, 2.1, tw - 3.6], fontSize: 12, fontFace: "Arial", color: HEX.dk1, margin: [5, 6, 5, 6], valign: "middle" });
+    ruledTable(s, rows, { x: tx, y: 1.3, colW: [1.5, 2.1, tw - 3.6], lines: [1, 2, 3, 2, 3, 2], boldFirst: true });
     stat(s, "9/9", "read the next Bus 116 at 200% text in the test", tx, 5.0, 2.6, { size: 36, bigH: 0.6, labelH: 0.6 });
     text(s, "Redesign figures were computed by script from the Figma file, so they are close estimates rather than a formal audit.", { x: tx + 2.9, y: 5.25, w: tw - 2.9, h: 0.9, fontSize: 11, color: K.grey });
   }
@@ -537,16 +618,11 @@ async function build() {
     const s = content("Testing", "All nine finished; 78 of 81 attempts succeeded",
       "Presenter: Chenyang Zhang · about 30 seconds.\n\nEvery participant finished. Of 81 task attempts, 78 succeeded: 59 by the expected path and 19 by another route, with three give-ups, each by a different person. The Maze usability score was 71, and all nine rated the redesign Good or Very good. Phone users took the expected path far less often than laptop users. Note that Maze calls any route other than the expected one indirect, even a shorter route we designed.");
     const M = ["Onboarding", "Read Bus 8 information (F1)", "Save a stop (F2)", "Check saved stops (F2)", "Plan a trip (F3)", "Find nearby stops (F4)", "Open the map (F4)", "Find landmarks (F4)", "Enlarge the text (F5)"];
-    s.addChart(pres.charts.BAR, [
-      { name: "Direct (expected path)", labels: M, values: [9, 9, 2, 7, 8, 4, 6, 8, 6] },
-      { name: "Indirect (another route)", labels: M, values: [0, 0, 6, 1, 1, 5, 3, 0, 3] },
-      { name: "Gave up", labels: M, values: [0, 0, 1, 1, 0, 0, 0, 1, 0] },
-    ], {
-      x: ML, y: 1.25, w: 8.4, h: 5.25, barDir: "bar", barGrouping: "stacked", barGapWidthPct: 45,
-      chartColors: OUTCOME, catAxisOrientation: "maxMin", catAxisLabelFontSize: 13, catAxisLabelColor: HEX.dk1, catAxisLineShow: false,
-      valAxisHidden: true, valAxisMinVal: 0, valAxisMaxVal: 9, valGridLine: { style: "none" }, catGridLine: { style: "none" },
-      showValue: true, dataLabelPosition: "ctr", dataLabelColor: HEX.lt1, dataLabelFontSize: 14, dataLabelFontBold: true, dataLabelFormatCode: "0;;;",
-      showLegend: true, legendPos: "t", legendFontSize: 12, legendColor: HEX.dk1, ...chartText,
+    const direct = [9, 9, 2, 7, 8, 4, 6, 8, 6], indirect = [0, 0, 6, 1, 1, 5, 3, 0, 3], gaveUp = [0, 0, 1, 1, 0, 0, 0, 1, 0];
+    legend(s, [["Direct (expected path)", OUTCOME[0]], ["Indirect (another route)", OUTCOME[1]], ["Gave up", OUTCOME[2]]], 0, 1.32, { centre: ML + 4.2 });
+    hbars(s, {
+      x: ML, labelW: 2.35, bx: ML + 2.47, scale: 5.78 / 9, y: 1.7, rowH: 0.53, barH: 0.36, inside: true,
+      rows: M.map((m, i) => ({ label: m, segs: [[direct[i], OUTCOME[0]], [indirect[i], OUTCOME[1]], [gaveUp[i], OUTCOME[2]]] })),
     });
     text(s, "Participants per mission (n = 9). Maze counts any route other than the single expected path as indirect, even a shorter one.", { x: ML, y: 6.55, w: 8.4, h: 0.35, fontSize: 11, color: K.grey });
     const tx = 9.45, tw = W - ML - tx;
@@ -563,28 +639,20 @@ async function build() {
     const s = content("Testing", "On the right screen, people read the times correctly",
       "Presenter: Chenyang Zhang · about 20 seconds.\n\nWhen people reached the right screen, they read it correctly: the next Bus 8, the first bus at the nearest stop, both buses to the hospital, and Bus 116 at the largest text size. The two lower scores are the duration questions, which we come back to in a moment. Ease ratings were mostly Easy or Really easy; the only 'A little difficult' ratings were for saving a stop.");
     text(s, "Questions answered correctly (out of 9)", { x: ML, y: 1.3, w: 5.9, h: 0.35, fontSize: 15, bold: true });
-    s.addChart(pres.charts.BAR, [{ name: "Correct", labels: ["Next Bus 8", "Route 8 journey time", "Walking time on the trip", "Which bus comes first", "Buses to the hospital", "Bus 116 at 200% text"], values: [9, 7, 3, 8, 9, 9] }], {
-      x: ML, y: 1.75, w: 5.9, h: 4.3, barDir: "bar", barGapWidthPct: 55, chartColors: [HEX.accent2],
-      catAxisOrientation: "maxMin", catAxisLabelFontSize: 13, catAxisLabelColor: HEX.dk1, catAxisLineShow: false,
-      valAxisHidden: true, valAxisMinVal: 0, valAxisMaxVal: 10, valGridLine: { style: "none" }, catGridLine: { style: "none" },
-      showValue: true, dataLabelPosition: "outEnd", dataLabelColor: HEX.dk1, dataLabelFontSize: 14, dataLabelFontBold: true, dataLabelFormatCode: '0"/9"',
-      showLegend: false, ...chartText,
+    const Q = [["Next Bus 8", 9], ["Route 8 journey time", 7], ["Walking time on the trip", 3], ["Which bus comes first", 8], ["Buses to the hospital", 9], ["Bus 116 at 200% text", 9]];
+    hbars(s, {
+      x: ML, labelW: 1.95, bx: ML + 2.07, scale: 3.33 / 9, y: 1.84, rowH: 0.69, barH: 0.44, end: (v) => `${v}/9`,
+      rows: Q.map(([q, v]) => ({ label: q, segs: [[v, HEX.accent2]] })),
     });
     text(s, "The two duration questions scored lower. Their wording pointed to another number on the screen (slide 18).", { x: ML, y: 6.15, w: 5.9, h: 0.6, fontSize: 12, color: K.grey });
     const ex = 6.95, ew = W - ML - ex;
     text(s, "Ease ratings after each task", { x: ex, y: 1.3, w: ew, h: 0.35, fontSize: 15, bold: true });
-    const T = ["Read bus information", "Save a stop", "Search a route", "Use Nearby", "Adjust text size"];
-    s.addChart(pres.charts.BAR, [
-      { name: "Really easy", labels: T, values: [4, 3, 4, 3, 5] },
-      { name: "Easy", labels: T, values: [4, 2, 5, 4, 2] },
-      { name: "Moderate", labels: T, values: [1, 2, 0, 2, 2] },
-      { name: "A little difficult", labels: T, values: [0, 2, 0, 0, 0] },
-    ], {
-      x: ex, y: 1.75, w: ew, h: 4.3, barDir: "bar", barGrouping: "stacked", barGapWidthPct: 55, chartColors: EASE,
-      catAxisOrientation: "maxMin", catAxisLabelFontSize: 13, catAxisLabelColor: HEX.dk1, catAxisLineShow: false,
-      valAxisHidden: true, valAxisMinVal: 0, valAxisMaxVal: 9, valGridLine: { style: "none" }, catGridLine: { style: "none" },
-      showValue: true, dataLabelPosition: "ctr", dataLabelColor: HEX.lt1, dataLabelFontSize: 14, dataLabelFontBold: true, dataLabelFormatCode: "0;;;",
-      showLegend: true, legendPos: "t", legendFontSize: 12, legendColor: HEX.dk1, ...chartText,
+    // ratings per task: really easy, easy, moderate, a little difficult
+    const T = [["Read bus information", [4, 4, 1, 0]], ["Save a stop", [3, 2, 2, 2]], ["Search a route", [4, 5, 0, 0]], ["Use Nearby", [3, 4, 2, 0]], ["Adjust text size", [5, 2, 2, 0]]];
+    legend(s, [["Really easy", EASE[0]], ["Easy", EASE[1]], ["Moderate", EASE[2]], ["A little difficult", EASE[3]]], 0, 1.82, { centre: ex + ew / 2 });
+    hbars(s, {
+      x: ex, labelW: 1.77, bx: 8.84, scale: (W - ML - 8.84) / 9, y: 2.16, rowH: 0.76, barH: 0.49, inside: true,
+      rows: T.map(([t, v]) => ({ label: t, segs: v.map((n, k) => [n, EASE[k]]) })),
     });
     text(s, "No task was rated harder than \"A little difficult\". Both of those ratings were for saving a stop.", { x: ex, y: 6.15, w: ew, h: 0.6, fontSize: 12, color: K.grey });
   }
@@ -603,20 +671,12 @@ async function build() {
       text(s, l, { x, y: 1.9, w, h: 0.55, fontSize: 12 });
     });
     text(s, "Screens visited in the save task, by participant and ease rating", { x: rx, y: 2.65, w: rw, h: 0.3, fontSize: 13, bold: true });
-    const legend = [["Really easy", EASE[0]], ["Easy", EASE[1]], ["Moderate", EASE[2]], ["A little difficult", EASE[3]]];
-    let lx = rx;
-    for (const [lab, hex] of legend) {
-      s.addShape(pres.shapes.RECTANGLE, { x: lx, y: 3.05, w: 0.18, h: 0.18, fill: { color: hex }, line: { color: hex, width: 0.5 } });
-      text(s, lab, { x: lx + 0.25, y: 3.0, w: 1.5, h: 0.28, fontSize: 11, color: K.grey });
-      lx += 0.4 + lab.length * 0.075;
-    }
+    legend(s, [["Really easy", EASE[0]], ["Easy", EASE[1]], ["Moderate", EASE[2]], ["A little difficult", EASE[3]]], rx, 3.0, { fontSize: 11, color: K.grey });
+    // participant, screens visited, ease rating (index into EASE)
     const P = [["P4 · direct", 4, 0], ["P6 · direct", 4, 0], ["P7 · via Saved", 4, 0], ["P5 · via Saved", 5, 1], ["P1 · card, twice", 6, 1], ["P3 · gave up", 9, 3], ["P2 · via Saved", 10, 2], ["P9 · card, 4 times", 10, 2], ["P8 · via Saved", 18, 3]];
-    s.addChart(pres.charts.BAR, [{ name: "Screens", labels: P.map((p) => p[0]), values: P.map((p) => p[1]) }], {
-      x: rx, y: 3.3, w: rw, h: 2.75, barDir: "bar", barGapWidthPct: 30, chartColors: P.map((p) => EASE[p[2]]),
-      catAxisOrientation: "maxMin", catAxisLabelFontSize: 11, catAxisLabelColor: HEX.dk1, catAxisLineShow: false, catAxisLabelFrequency: 1,
-      valAxisHidden: true, valAxisMinVal: 0, valAxisMaxVal: 20, valGridLine: { style: "none" }, catGridLine: { style: "none" },
-      showValue: true, dataLabelPosition: "outEnd", dataLabelColor: HEX.dk1, dataLabelFontSize: 11, dataLabelFontBold: true,
-      showLegend: false, ...chartText,
+    hbars(s, {
+      x: rx, labelW: 1.35, bx: rx + 1.46, scale: 4.84 / 18, y: 3.35, rowH: 0.2925, barH: 0.22, labelSize: 11, valueSize: 11, end: String,
+      rows: P.map(([p, n, e]) => ({ label: p, segs: [[n, EASE[e]]] })),
     });
     text(s, [
       { text: "\"Not intuitive. Don't know that the station inside the column is interactive and can therefore lead to the saving process of target station.\"", options: { italic: true, breakLine: true } },
@@ -683,13 +743,14 @@ async function build() {
       s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: ML, y, w: 2.9, h: 0.6, rectRadius: 0.08, fill: { color: K.panel }, line: { color: K.panel, width: 0.5 } });
       s.addImage({ data: await icon(ic, HEX.accent2), x: ML + 0.15, y: y + 0.14, w: 0.32, h: 0.32, altText: "" });
       text(s, lab, { x: ML + 0.6, y, w: 2.25, h: 0.6, fontSize: 13, valign: "middle" });
-      arrow(s, ML + 2.95, y + 0.3, bx - 0.06, by + bh / 2, { color: K.mid, width: 1.25 });
+      arrow(s, ML + 2.95, y + 0.3, bx - 0.24, by + bh / 2, { color: K.mid, width: 1.25, head: false });
     }
+    arrow(s, bx - 0.26, by + bh / 2, bx - 0.05, by + bh / 2, { color: K.mid, width: 1.25 }); // the four lines meet in one head
     s.addShape(pres.shapes.ROUNDED_RECTANGLE, { x: bx, y: by, w: bw, h: bh, rectRadius: 0.12, fill: { color: K.white }, line: { color: K.red, width: 1.75 } });
     s.addImage({ data: await icon("MdPlace", HEX.accent1), x: bx + 0.25, y: by + 0.28, w: 0.42, h: 0.42, altText: "" });
     text(s, "Stop page", { x: bx + 0.75, y: by + 0.27, w: bw - 1, h: 0.45, fontSize: 20, bold: true });
     const sp = ["Every route at that stop", "Next arrivals, Live or Scheduled", "A labelled Save this stop button"];
-    text(s, sp.map((t, k) => ({ text: t, options: { bullet: true, breakLine: k < sp.length - 1 } })), { x: bx + 0.3, y: by + 0.9, w: bw - 0.5, h: 1.7, fontSize: 14, paraSpaceAfter: 8 });
+    text(s, bullets(sp, 6.5), { x: bx + 0.3, y: by + 0.9, w: bw - 0.5, h: 1.7, fontSize: 14 });
     const rx = 8.45, rw = W - ML - rx;
     text(s, [
       { text: "Why", options: { bold: true, breakLine: true } },
@@ -699,17 +760,14 @@ async function build() {
       { text: "The same save task against the current design, comparing the expected-path rate (now 2 of 9) and taps on the stop card." },
     ], { x: rx, y: by + 0.05, w: rw, h: bh, fontSize: 13 });
     text(s, "Smaller changes from the test", { x: ML, y: 4.55, w: CW, h: 0.32, fontSize: 14, bold: true });
-    const hd = (t) => ({ text: t, options: { bold: true, fill: { color: HEX.lt2 } } });
     const rows = [
-      [hd("Finding"), hd("Change"), hd("Evidence")],
+      ["Finding", "Change", "Evidence"],
       ["\"Full route\" read as the wait", "Relabel it \"Journey time\", like the Chinese 全程需時", "Block 4: two answered \"5 min\""],
       ["Map view link easy to miss", "Give the Map buttons on Home and Nearby more weight", "Block 14: one person took eight steps"],
       ["Saved stops expected on Home", "Show saved stops as well as routes in My favourites", "Block 7 comment"],
       ["No participant aged 60 or over", "Re-test in Cantonese with older passengers, on phones", "Profile; blocks 4 and 10"],
     ];
-    const line = { type: "solid", pt: 0.75, color: HEX.accent4 }, none = { type: "none" };
-    s.addTable(rows.map((r, i) => r.map((c) => (typeof c === "string" ? { text: c, options: {} } : c)).map((c) => ({ ...c, options: { ...c.options, lang: LANG, border: [i === 0 ? line : none, none, line, none] } }))),
-      { x: ML, y: 4.92, w: CW, colW: [3.5, 5.3, CW - 8.8], fontSize: 12, fontFace: "Arial", color: HEX.dk1, margin: [3, 6, 3, 6], valign: "middle" });
+    ruledTable(s, rows, { x: ML, y: 4.92, colW: [3.5, 5.3, CW - 8.8], lines: [1, 1, 1, 1, 1], pad: 0.042 });
   }
 
   // 21 --------------------------------------------------------------- summary
@@ -725,7 +783,7 @@ async function build() {
     const lx = 7.0, lw = W - ML - lx;
     text(s, "Limitations", { x: lx, y: 1.3, w: lw, h: 0.35, fontSize: 16, bold: true });
     const lim = ["Nine participants aged 18 to 48, none 60 or over, tested in English", "Five used laptops, so touch and thumb reach were barely tested", "Unmoderated sessions; the comments are the researcher's notes", "The English prototype has links only: taps elsewhere count as misclicks", "Frozen before testing, so the proposed changes are untested"];
-    text(s, lim.map((t, k) => ({ text: t, options: { bullet: true, breakLine: k < lim.length - 1 } })), { x: lx, y: 1.8, w: lw, h: 3.4, fontSize: 14, paraSpaceAfter: 9 });
+    text(s, bullets(lim, 7.5), { x: lx, y: 1.8, w: lw, h: 3.4, fontSize: 14 });
     rule(s, ML, 5.65, CW);
     const links = [["Figma design file", "figma.com/design/2JkOkm1pztoaZask0fDJeq", FIGMA], ["Clickable prototype", "flow \"First launch (en-GB)\"", PROTO], ["Maze report", "app.maze.co/report/Kowloon_bus_redesign", MAZE]];
     links.forEach(([head, shown, url], i) => {

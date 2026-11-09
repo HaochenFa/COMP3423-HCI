@@ -4,7 +4,7 @@ Builds `slides/COMP3423_App1933_Presentation.pptx`, the 21-slide deck for the pr
 
 | File | What it holds |
 |---|---|
-| `build_slides.js` | Theme, slide layouts, every slide in order, speaker notes (presenter and timing for each slide) and the native charts |
+| `build_slides.js` | Theme, slide layouts, every slide in order, speaker notes (presenter and timing for each slide) and the chart data |
 | `slide_figs.py` | Images for the slides, written to `img/`: the original-app screenshots with numbered callouts (the numbers match the list on each feature slide), the marked English Home screens for the save finding, the text-size captures and the component crops |
 
 The English screens come from `report/build/screens/`, the iteration strip from `report/figures/iteration/`, and the annotation helpers from `report/figures/annotated/annotlib.py`. Every number on the slides matches the report (`report/build/part3.js`) and the Maze data (`user-test/participants.md`).
@@ -36,6 +36,8 @@ cd out && soffice --headless --convert-to pdf --outdir . ../../COMP3423_App1933_
 ```
 
 LibreOffice can wrap text slightly differently from PowerPoint, so check the final deck in PowerPoint as well.
+
+The deck also has to survive an import into Canva. Canva's PowerPoint import drops native tables, replaces chart labels with numbers, loses line-end arrowheads and paragraph spacing, so the builder draws charts, tables and arrows from plain shapes and text boxes, and spaces list items with small empty lines. Keep it that way: no `addChart`, `addTable` or line arrowheads. Canva does import the speaker notes. Each note ends with its slide number, which is harmless. Table rows have fixed heights, so if you change a table's text, check that the `lines` count for each row still matches.
 
 ## Running order (about 9 min 50 s)
 
